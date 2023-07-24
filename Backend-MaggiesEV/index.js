@@ -7,7 +7,12 @@ app.get('/', (req, res) => {
   res.send('Hello, Backend MaggiesEV!');
 });
 
+app.get('/product-listings', (req, res) => {
+  res.send('The product listings!');
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
