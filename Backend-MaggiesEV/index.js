@@ -4,7 +4,7 @@ const port = 3000; // Replace with the desired port number
 
 // Define a route
 app.get('/', (req, res) => {
-  res.send('Hello, Express!');
+  res.send('Hello, Backend MaggiesEV!');
 });
 
 // Start the server
