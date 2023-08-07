@@ -11,6 +11,11 @@ app.get('/product-listings', (req, res) => {
   res.send('The product listings!');
 });
 
+app.get('/product', (req, res) => {
+  res.send('The product!');
+});
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
