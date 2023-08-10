@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Tesla Model 3",
+        "brand": "Tesla",
+        "model": "Model 3",
+        "price": 38549.59,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "my-googled-tesla-model-3.jpg",
+            "my-googled-tesla-model-3-white.jpg",
+            "my-googled-tesla-model-3-blue.jpg"
+        ]
+    },
+    {
+        "name": "Honda Accord Hybrid",
+        "brand": "Honda",
+        "model": "Accord 2023",
+        "price": 31049.00,
+        "categories": ["E-car", "Hybrid"],        
+        "imageLinks": [
+            "honda-accord-hybrid-2023-1.jpg",
+            "honda-accord-hybrid-2023-2.jpg",
+            "honda-accord-hybrid-2023-3.jpg"
+        ]
+    },
+    {
+        "name": "Shimano E-bike EVO",
+        "brand": "Shimano",
+        "model": "Evo",
+        "price": 2099.99,
+        "categories": ["E-bike"],        
+        "imageLinks": [
+            "shimano-evo-fron.jpg",
+            "shimano-evo-side.jpg",
+            "shimano-evo-top.jpg"
+        ]
+    }
+]
