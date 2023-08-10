@@ -1,0 +1,58 @@
+/*
+
+=====================
+STYLE SWITCHER FOR DEMO
+=====================
+
+*/
+
+#style-switch-button {
+    position: fixed;
+    top: 160px;
+    right: 0px;
+    border-radius: 0;
+    z-index: 2;
+}
+
+.style-switch-select {
+    height: auto !important;
+}
+
+#style-switch {
+    position: fixed;
+    top: 192px;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    border: solid 1px $gray-400;
+    background: #fff;
+    z-index: 2000;
+    h4 {
+        color: $gray-700;
+    }
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    stroke-width: 2;
+}
+
+.page-label {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 100%;
+    background: #d3122a;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 80px;
+    z-index: 99;
+}

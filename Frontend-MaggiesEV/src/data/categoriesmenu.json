@@ -1,0 +1,281 @@
+{
+  "name": "Product Categories",
+  "subtitle": "Category",
+  "categories": [
+    {
+      "name": "Trousers",
+      "productcount": 120,
+      "icon": "trousers-1",
+      "link": "/category-full",
+      "img": "/img/product/category-jackets-2.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Jackets",
+      "productcount": 55,
+      "icon": "suit-1",
+      "link": "/category-full",
+      "img": "/img/product/category-coats.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "T-Shirts",
+      "productcount": 33,
+      "icon": "shirt5-1",
+      "link": "/category-full",
+      "img": "/img/product/category-dresses.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Pullovers",
+      "productcount": 80,
+      "icon": "pullover-1",
+      "link": "/category-full",
+      "img": "/img/product/category-overalls.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Scarfs",
+      "productcount": 120,
+      "icon": "scarf-1",
+      "link": "/category-full",
+      "img": "/img/product/category-skirts.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Shorts",
+      "productcount": 55,
+      "icon": "shorts1-1",
+      "link": "/category-full",
+      "img": "/img/product/category-shirts.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Underwear",
+      "productcount": 80,
+      "icon": "underwear1-1",
+      "link": "/category-full",
+      "img": "/img/product/category-shoes.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Watches",
+      "productcount": 80,
+      "icon": "watch-1",
+      "link": "/category-full",
+      "img": "/img/product/category-bags.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Bags",
+      "productcount": 80,
+      "icon": "portfolio-1",
+      "link": "/category-full",
+      "img": "/img/product/category-bijoutery-2.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Caps",
+      "productcount": 80,
+      "icon": "cap-1",
+      "link": "/category-full",
+      "img": "/img/product/category-jackets-2.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Accessories",
+      "productcount": 80,
+      "icon": "bowtie-1",
+      "link": "/category-full",
+      "img": "/img/product/category-jackets-2.jpg",
+      "subcategories": [
+        {
+          "name": "Lorem ipsum",
+          "link": "#"
+        },
+        {
+          "name": "Dolor",
+          "link": "#"
+        },
+        {
+          "name": "Sit amet",
+          "link": "#"
+        },
+        {
+          "name": "Donec vitae",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}

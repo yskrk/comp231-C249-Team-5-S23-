@@ -1,0 +1,223 @@
+[
+    {
+        "name": "Invoice address",
+        "title": true,
+        "titleclass": "mb-4",
+        "step": 1,
+        "inputs": [
+            {
+                "label": "Full Name",
+                "name": "fullname_invoice",
+                "placeholder": "Joe Black",
+                "type": "text"
+            },
+            {
+                "label": "Email Address",
+                "name": "emailaddress_invoice",
+                "placeholder": "joe.black@gmail.com",
+                "type": "text"
+            },
+            {
+                "label": "Street",
+                "name": "street_invoice",
+                "placeholder": "123 Main St.",
+                "type": "text"
+            },
+            {
+                "label": "City",
+                "name": "city_invoice",
+                "placeholder": "City",
+                "type": "text"
+            },
+            {
+                "label": "ZIP",
+                "name": "zip_invoice",
+                "placeholder": "Postal code",
+                "type": "text"
+            },
+            {
+                "label": "State",
+                "name": "state_invoice",
+                "placeholder": "State",
+                "type": "text"
+            },
+            {
+                "label": "Phone Number",
+                "name": "phonenumber_invoice",
+                "placeholder": "Phone Number",
+                "type": "text"
+            },
+            {
+                "label": "Use a different shipping address",
+                "name": "show-shipping-address",
+                "type": "checkbox",
+                "toggleshipping": true
+            }
+        ]
+    },
+    {
+        "name": "Shipping address",
+        "titleclass": "my-4",
+        "title": true,
+        "collapse": true,
+        "step": 1,
+        "inputs": [
+            {
+                "label": "Full Name",
+                "name": "shipping_fullname_invoice",
+                "placeholder": "Joe Black",
+                "type": "text"
+            },
+            {
+                "label": "Email Address",
+                "name": "shipping_emailaddress_invoice",
+                "placeholder": "joe.black@gmail.com",
+                "type": "text"
+            },
+            {
+                "label": "Street",
+                "name": "shipping_street_invoice",
+                "placeholder": "123 Main St.",
+                "type": "text"
+            },
+            {
+                "label": "City",
+                "name": "shipping_city_invoice",
+                "placeholder": "City",
+                "type": "text"
+            },
+            {
+                "label": "ZIP",
+                "name": "shipping_zip_invoice",
+                "placeholder": "Postal code",
+                "type": "text"
+            },
+            {
+                "label": "State",
+                "name": "shipping_state_invoice",
+                "placeholder": "State",
+                "type": "text"
+            },
+            {
+                "label": "Phone Number",
+                "name": "shipping_phonenumber_invoice",
+                "placeholder": "Phone Number",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Delivery method",
+        "buttons": true,
+        "step": 2,
+        "inputs": [
+            {
+                "label": "Usps next day",
+                "text": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections",
+                "name": "shipping",
+                "id": "option0",
+                "type": "radio",
+                "price": 10
+            },
+            {
+                "label": "DHL",
+                "text": "Get it right on next day - fastest option possible.",
+                "name": "shipping",
+                "id": "option1",
+                "type": "radio",
+                "price": 15
+            },
+            {
+                "label": "PPL",
+                "text": "Get it right on next day - fastest option possible.",
+                "name": "shipping",
+                "id": "option2",
+                "type": "radio",
+                "price": 8
+            },
+            {
+                "label": "UPS",
+                "text": "Get it right on next day - fastest option possible.",
+                "name": "shipping",
+                "id": "option3",
+                "type": "radio",
+                "price": 20
+            }
+        ]
+    },
+    {
+        "name": "Payment Method",
+        "accordion": true,
+        "step": 3,
+        "tabs": [
+            {
+                "name": "Card Payment",
+                "default": true,
+                "inputs": [
+                    {
+                        "label": "Name on Card",
+                        "name": "card-name",
+                        "type": "text",
+                        "placeholder": "Name on card"
+                    },
+                    {
+                        "label": "Card Number",
+                        "name": "card-number",
+                        "type": "text",
+                        "placeholder": "Card number"
+                    },
+                    {
+                        "label": "Expiry Date",
+                        "name": "expiry-date",
+                        "type": "text",
+                        "placeholder": "MM/YY",
+                        "col": 4
+                    },
+                    {
+                        "label": "CVC/CVV",
+                        "name": "cvv",
+                        "type": "text",
+                        "placeholder": "123",
+                        "col": 4
+                    },
+                    {
+                        "label": "ZIP",
+                        "name": "zip",
+                        "type": "text",
+                        "placeholder": "123",
+                        "col": 4
+                    }
+                ]
+            },
+            {
+                "name": "Paypal",
+                "inputs": [
+                    {
+                        "label": "Pay with PayPal",
+                        "name": "payment",
+                        "id": "payment-method-1",
+                        "type": "radio",
+                        "text": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections"
+                    }
+                ]
+            },
+            {
+                "name": "Pay on delivery",
+                "inputs": [
+                    {
+                        "label": "Pay on delivery",
+                        "name": "payment",
+                        "id": "payment-method-2",
+                        "type": "radio",
+                        "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &quot;What's happened to me?&quot; he thought. It wasn't a dream."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Order Review",
+        "step": 4,
+        "reviewtable": true
+    }
+]

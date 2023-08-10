@@ -1,0 +1,32 @@
+[
+    {
+        "label": "Modern",
+        "productcount": 5,
+        "value": "tag0",
+        "name": "tag"
+    },
+    {
+        "label": "Trendy",
+        "productcount": 5,
+        "value": "tag1",
+        "name": "tag"
+    },
+    {
+        "label": "Smart",
+        "productcount": 5,
+        "value": "tag2",
+        "name": "tag"
+    },
+    {
+        "label": "Casual",
+        "productcount": 5,
+        "value": "tag3",
+        "name": "tag"
+    },
+    {
+        "label": "Formal",
+        "productcount": 5,
+        "value": "tag4",
+        "name": "tag"
+    }
+]

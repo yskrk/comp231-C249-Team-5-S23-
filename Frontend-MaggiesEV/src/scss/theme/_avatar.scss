@@ -1,0 +1,39 @@
+/*
+* ===================================================
+*    Avatar
+* ===================================================
+*/
+
+.avatar {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    border: $border-color;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: $box-shadow;
+    line-height: 3rem;
+
+    &.avatar-sm {
+        width: 2.5rem;
+    }
+
+    &.avatar-lg {
+        width: 5rem;
+    }
+
+    &.avatar-xl {
+        width: 7rem;
+    }
+
+    &.avatar-xxl {
+        width: 10rem;
+    }
+
+    &.avatar-border-white {
+        border: solid 2px $white;
+    }
+}

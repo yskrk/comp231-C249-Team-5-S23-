@@ -1,0 +1,287 @@
+/*
+* ===================================================
+*     Typography
+* ===================================================
+*/
+
+a {
+  //- transition: color .2s ease-in-out;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $gray-600;
+  font-weight: bold;
+}
+
+.label-heading {
+  color: $gray-600;
+  font-size: $font-size-base * 0.8;
+  font-weight: normal;
+  @include uppercase;
+}
+
+.hero-heading {
+  margin-bottom: 2rem;
+}
+
+@include media-breakpoint-down(lg) {
+  h1.hero-heading {
+    font-size: $h1-font-size * 0.5;
+  }
+
+  h2.hero-heading {
+    font-size: $h2-font-size * 0.5;
+  }
+
+  h3.hero-heading {
+    font-size: $h3-font-size * 0.5;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .display-1 {
+    font-size: $display1-size-small;
+  }
+
+  .display-2 {
+    font-size: $display2-size-small;
+  }
+
+  .display-3 {
+    font-size: $display3-size-small;
+  }
+
+  .display-4 {
+    font-size: $display4-size-small;
+  }
+}
+
+.capital {
+  float: left;
+  margin-right: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+.text-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  hr,
+  blockquote {
+    margin-bottom: 2rem;
+  }
+}
+
+.text-content {
+  p,
+  ul,
+  ol {
+    font-size: 1.1rem;
+  }
+
+  p,
+  ul,
+  ol {
+    color: $gray-600;
+  }
+}
+
+p.lead {
+  strong {
+    font-weight: bold;
+  }
+}
+
+.link-animated {
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 0%;
+    height: 2px;
+    content: "";
+    transition: 0.2s;
+    background: $link-hover-color;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &.d-block {
+    display: block;
+    padding: 0.5em;
+
+    &:hover {
+      background: #eee;
+    }
+  }
+
+  &.link-animated-light {
+    &:after {
+      height: 1px;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .link-animated.text-#{$color} {
+    &:hover {
+      &:after {
+        background: $value;
+      }
+    }
+  }
+
+  .link-animated.text-#{$color}-hover {
+    &:hover {
+      &:after {
+        background: $value !important;
+      }
+    }
+  }
+}
+
+.btn {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.input-group .btn {
+  padding-top: $input-btn-padding-y;
+  padding-bottom: $input-btn-padding-y;
+}
+/* TODO 
+.btn-sm {
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $font-size-sm - 0.1rem,
+    $btn-line-height-sm,
+    $btn-border-radius-sm
+  );
+}
+*/
+
+.dropdown-menu {
+  box-shadow: $dropdown-box-shadow;
+}
+
+.blockquote {
+  padding: $spacer;
+  border-left: 2px solid $primary;
+}
+
+.blockquote-icon {
+  padding-top: 1rem;
+  background-image: str-replace(
+    url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='50px' viewBox='0 0 508.044 508.044' style='enable-background:new 0 0 508.044 508.044;' fill='#{$blockquoteiconfill}' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M0.108,352.536c0,66.794,54.144,120.938,120.937,120.938c66.794,0,120.938-54.144,120.938-120.938 s-54.144-120.937-120.938-120.937c-13.727,0-26.867,2.393-39.168,6.61C109.093,82.118,230.814-18.543,117.979,64.303 C-7.138,156.17-0.026,348.84,0.114,352.371C0.114,352.426,0.108,352.475,0.108,352.536z'/%3E%3Cpath d='M266.169,352.536c0,66.794,54.144,120.938,120.938,120.938s120.938-54.144,120.938-120.938S453.9,231.599,387.106,231.599 c-13.728,0-26.867,2.393-39.168,6.61C375.154,82.118,496.875-18.543,384.04,64.303C258.923,156.17,266.034,348.84,266.175,352.371 C266.175,352.426,266.169,352.475,266.169,352.536z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"),
+    "#",
+    "%23"
+  );
+
+  background-repeat: no-repeat;
+}
+/* TODO 
+.hr-text {
+  position: relative;
+  height: 1.5rem;
+  text-align: center;
+  color: $hr-border-color;
+  border: 0;
+  outline: 0;
+  line-height: 1em;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: $hr-border-color;
+  }
+
+  &:after {
+    display: inline-block;
+    position: relative;
+    padding: 0 0.5em;
+    content: attr(data-content);
+    color: $gray-500;
+    background-color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+*/
+.nav-link {
+  color: $gray-600;
+}
+
+.nav-link-lg {
+  display: block;
+  color: $gray-600;
+  font-size: $h4-font-size;
+  font-weight: bold;
+
+  &:hover,
+  &:active,
+  &.active {
+    color: $dark;
+  }
+}
+
+ul.list-icon {
+  padding-left: 2rem;
+
+  li {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+
+    &:before {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      margin-left: -30px;
+      content: "";
+      transform: translateY(-50%);
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Right%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='#{escape-for-svg($primary)}' stroke-miterlimit='10' stroke-width='4' d='M26 20.006L40 32 26 44.006' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    color: $white;
+  }
+}
+
+.alert-primary {
+  color: $dark;
+}
+
+.alert-light {
+  color: $dark;
+}

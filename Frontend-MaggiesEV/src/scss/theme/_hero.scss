@@ -1,0 +1,26 @@
+/*
+* ===================================================
+*     Hero element
+* ===================================================
+*/
+.hero {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.hero-image {
+    padding-top: (100px + $headerHeight);
+    padding-bottom: 100px;
+    text-align: center;
+}
+.hero-boxed {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.hero-content {
+    h1 {
+        font-size: 3.5rem;
+    }
+}

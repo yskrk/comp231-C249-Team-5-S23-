@@ -1,0 +1,171 @@
+{
+  "name": "Push-up Jeans",
+  "category": "Jeans",
+  "price": 90,
+  "pricesale": 65,
+  "stars": 4,
+  "reviewscount": 25,
+  "img": {
+    "category": [
+      {
+        "img": "/img/product/0987188250_1_1_1.jpg",
+        "alt": "product"
+      },
+      {
+        "img": "/img/product/0987188250_2_1_1.jpg",
+        "alt": "product"
+      }
+    ],
+    "masonry": {
+      "img": "/img/product/serrah-galos-494312-unsplash-cropped.jpg",
+      "alt": "product"
+    },
+    "detail": [
+      {
+        "img": "/img/product/detail-3-gray.jpg",
+        "caption": "Push-up Jeans 1 - Caption text",
+        "alt": "Push-up Jeans 1"
+      },
+      {
+        "img": "/img/product/detail-1-gray.jpg",
+        "caption": "Push-up Jeans 2 - Caption text",
+        "alt": "Push-up Jeans 2"
+      },
+      {
+        "img": "/img/product/detail-2-gray.jpg",
+        "caption": "Push-up Jeans 3 - Caption text",
+        "alt": "Push-up Jeans 3"
+      },
+      {
+        "img": "/img/product/detail-4-gray.jpg",
+        "caption": "Push-up Jeans 4 - Caption text",
+        "alt": "Push-up Jeans 4"
+      },
+      {
+        "img": "/img/product/detail-5-gray.jpg",
+        "caption": "Push-up Jeans 5 - Caption text",
+        "alt": "Push-up Jeans 5"
+      },
+      {
+        "img": "/img/product/detail-6.jpg",
+        "caption": "Push-up Jeans 6 - Caption text",
+        "alt": "Push-up Jeans 6"
+      }
+    ]
+  },
+  "description": {
+    "short": "Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.",
+    "long": "<h5>About</h5><p class='text-muted'>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p><p class='text-muted'>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p><h5>You will love</h5><ul class='text-muted'><li>He must have tried it a hundred times</li><li>shut his eyes so that he wouldn't have to look</li><li>at the floundering legs, and only stopped</li></ul>",
+    "image": "/img/product/detail-3.jpg"
+  },
+  "additionalinfo": [
+    {
+      "name": "Product #",
+      "text": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Available packaging",
+      "text": "LOLDuis aute irure dolor in reprehenderit"
+    },
+    {
+      "name": "Weight",
+      "text": "dolor sit amet"
+    },
+    {
+      "name": "Sunt in culpa qui",
+      "text": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Weight",
+      "text": "dolor sit amet"
+    },
+    {
+      "name": "Sunt in culpa qui",
+      "text": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Product #",
+      "text": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Available packaging",
+      "text": "LOLDuis aute irure dolor in reprehenderit"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Han Solo",
+      "date": "Dec 2018",
+      "avatar": "/img/avatar/person-1.jpg",
+      "stars": 5,
+      "text": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections"
+    },
+    {
+      "author": "Luke Skywalker",
+      "date": "Dec 2018",
+      "avatar": "/img/avatar/person-2.jpg",
+      "stars": 4,
+      "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &quot;What's happened to me?&quot; he thought. It wasn't a dream."
+    },
+    {
+      "author": "Princess Leia",
+      "date": "Dec 2018",
+      "avatar": "/img/avatar/person-3.jpg",
+      "stars": 3,
+      "text": "His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table."
+    },
+    {
+      "author": "Jabba Hut",
+      "date": "Dec 2018",
+      "avatar": "/img/avatar/person-4.jpg",
+      "stars": 5,
+      "text": "Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Size",
+      "value": "Large"
+    },
+    {
+      "name": "Colour",
+      "value": "Green"
+    }
+  ],
+  "sizes": [
+    {
+      "value": "value_0",
+      "label": "Small"
+    },
+    {
+      "value": "value_1",
+      "label": "Medium"
+    },
+    {
+      "value": "value_2",
+      "label": "Large"
+    }
+  ],
+  "types": [
+    {
+      "value": "value_0",
+      "id": "material_0",
+      "label": "Hoodie"
+    },
+    {
+      "value": "value_1",
+      "id": "material_1",
+      "label": "College"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Leisure",
+      "link": "#"
+    },
+    {
+      "name": "Elegant",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+/*
+* ===================================================
+*     Swiper additional components
+* ===================================================
+*/
+:root {
+  --swiper-theme-color: #{$swiperColor};
+}
+
+.swiper-thumbs {
+  display: flex;
+  margin: 0 -5px;
+  padding-top: 10px;
+}
+
+.swiper-thumb-item {
+  max-width: 100px;
+  margin: 0 5px;
+  padding: 0;
+  transition: all 0.5s;
+  opacity: 0.5;
+  border: $btn-border-width solid transparent;
+  background-color: transparent;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.swiper-container-mx-negative {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.swiper-nav {
+  .swiper-button-prev,
+  .swiper-button-next {
+    transition: $transition-base;
+    opacity: 0.3;
+    color: $swiperColorDark;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.home-slider-design {
+  .swiper-nav {
+    display: none !important;
+  }
+}
+
+.home-slider-image {
+  max-height: 500px;
+
+  @include media-breakpoint-down(md) {
+    max-height: 250px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  right: auto;
+  left: 30px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 30px;
+  left: auto;
+}
+
+.swiper-pagination-white {
+  .swiper-pagination-bullet {
+    opacity: 0.6;
+    background: #fff;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $swiperColor;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $swiperColor;
+}
+
+.swiper-pagination-progressbar {
+  .swiper-pagination-progressbar-fill {
+    background: $swiperColor;
+  }
+}
+
+.swiper-outside-nav {
+  display: none;
+  $showOutsideNav: map-get($grid-breakpoints, "xl") + 200px;
+
+  @media (min-width: $showOutsideNav) {
+    display: block;
+  }
+
+  .swiper-button-prev {
+    left: -100px;
+  }
+
+  .swiper-button-next {
+    right: -100px;
+  }
+
+  &.align-with-products {
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 200px;
+    }
+  }
+}
+
+.product-slider {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 2rem;
+    height: 3rem;
+    background: $dark;
+
+    &::after {
+      font-size: 1rem;
+      color: $white;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 0;
+  }
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 0;
+  }
+}

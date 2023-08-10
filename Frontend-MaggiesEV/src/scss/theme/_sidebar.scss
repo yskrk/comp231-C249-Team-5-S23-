@@ -1,0 +1,126 @@
+/*
+* ===================================================
+*     Category sidebar
+* ===================================================
+*/
+
+.sidebar-block {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $gray-200;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.sidebar-heading {
+  margin-bottom: 1.2rem;
+  color: $dark;
+}
+
+.sidebar-badge {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0 0.8rem;
+  color: $gray-800;
+  border-radius: 4rem;
+  background: $gray-200;
+  font-size: 0.7em;
+}
+
+.nouislider-values {
+  display: flex;
+  margin-top: 1rem;
+  color: $gray-600;
+  font-size: $font-size-sm;
+  justify-content: space-between;
+}
+
+/* Sidebar Icon Menu */
+
+.sidebar-icon-menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+a.sidebar-icon-menu-link {
+  text-decoration: none;
+  color: $dark;
+  font-size: $font-size-sm;
+}
+
+.sidebar-icon-menu-item {
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid $gray-200;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &[data-toggle="collapse"] {
+    &::before {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 2.2rem;
+      right: 0;
+      transform: translateY(-50%);
+      color: $gray-600;
+      content: "";
+      $chevronSvg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Left%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='#{$gray-600}' stroke-miterlimit='10' stroke-width='5' d='M39 20.006L25 32l14 12.006' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+      background-image: escape-svg($chevronSvg);
+      background-position: right center;
+      transition: 0.2s;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    &::before {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+  }
+}
+
+.sidebar-icon {
+  width: 2rem !important;
+  height: 2rem !important;
+  margin-right: 1rem;
+}
+
+.sidebar-icon-menu-count {
+  margin-top: -1px;
+  color: $text-muted;
+  font-size: $font-size-sm;
+}
+
+.sidebar-icon-submenu {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  font-size: $font-size-sm;
+}
+
+.sidebar-icon-submenu-item {
+  margin-bottom: 0.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar-icon-submenu-link {
+  color: $gray-600;
+}

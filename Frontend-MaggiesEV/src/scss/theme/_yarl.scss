@@ -1,0 +1,32 @@
+// Yet Another React Ligthbox styles
+
+.yarl {
+  &__button {
+    filter: none !important;
+  }
+  &__toolbar {
+    button {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem !important;
+    }
+  }
+
+  &__navigation {
+    &_prev,
+    &_next {
+      padding: 2rem !important;
+      svg {
+        display: none;
+      }
+      background: rgba(0, 0, 0, 0.2)
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==")
+        no-repeat 50% !important;
+      @include media-breakpoint-up(lg) {
+        padding: 2.5rem !important;
+      }
+    }
+    &_next {
+      transform: scaleX(-1) translateY(-50%) !important;
+    }
+  }
+}

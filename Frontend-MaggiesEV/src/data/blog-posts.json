@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Pellentesque habitant morbi",
+        "slug": "pellentesque-habitant-morbi",
+        "img": "/img/blog/christopher-campbell-28571-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Best books about Fashion",
+        "slug": "best-books-about-fashion",
+        "img": "/img/blog/ian-dooley-347942-unsplash.jpg",
+        "masonry": "/img/blog/kyle-loftus-596319-unsplash-cropped-2.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Best books about Fashion",
+        "slug": "best-books-about-fashion",
+        "img": "/img/blog/ian-dooley-347962-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Autumn fashion tips and tricks",
+        "slug": "autumn-fashion-tips-and-tricks",
+        "img": "/img/blog/matheus-ferrero-334418-unsplash.jpg",
+        "masonry": "/img/blog/averie-woodard-319832-unsplash-cropped.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Newest photo apps",
+        "slug": "newest-photo-apps",
+        "img": "/img/blog/photo-1534126511673-b6899657816a.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Best books about Photography",
+        "slug": "best-books-about-photography",
+        "img": "/img/blog/rahul-anil-214671-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Best books about Fashion",
+        "slug": "best-books-about-fashion",
+        "img": "/img/blog/ian-dooley-347942-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Pellentesque habitant morbi",
+        "slug": "pellentesque-habitant-morbi",
+        "img": "/img/blog/christopher-campbell-28571-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    },
+    {
+        "name": "Best books about Fashion",
+        "slug": "best-books-about-fashion",
+        "img": "/img/blog/ian-dooley-347962-unsplash.jpg",
+        "date": "January 16, 2019",
+        "category": ["Fashion and style", "fashion-and-style"]
+    }
+]

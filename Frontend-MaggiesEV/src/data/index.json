@@ -1,0 +1,49 @@
+{
+    "swiper": [
+        {
+            "name": "Blouses & Tops",
+            "subtitle": "Our all-time favourites",
+            "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+            "button": "Discover more",
+            "link": "#",
+            "img": "/img/photo/home-1-plain.jpg",
+            "bgdirection": "right",
+            "subtitleclass": "text-dark mb-3",
+            "titleclass": "display-1 mb-3"
+        },
+        {
+            "name": "Linen and denim",
+            "subtitle": "Blue & White",
+            "button": "Start shopping",
+            "link": "#",
+            "img": "/img/photo/home-2-plain.jpg",
+            "rowclass": "justify-content-center text-center",
+            "subtitleclass": "text-dark mb-3",
+            "titleclass": "display-1 mb-3"
+        },
+        {
+            "name": "For every occassion",
+            "subtitle": "Sneakers",
+            "button": "Start shopping",
+            "link": "#",
+            "img": "/img/photo/home-3-plain.jpg",
+            "contentoffset": "6",
+            "subtitleclass": "text-primary mb-4",
+            "titleclass": "display-1 mb-5"
+        }
+    ],
+    "maincategories": [
+        {
+            "name": "Women",
+            "link": "/category-full",
+            "button": "See",
+            "img": "/img/product/category-women.jpg"
+        },
+        {
+            "name": "Men",
+            "link": "/category-full",
+            "button": "See",
+            "img": "/img/product/category-men.jpg"
+        }
+    ]
+}

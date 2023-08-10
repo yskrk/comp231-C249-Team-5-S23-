@@ -1,0 +1,44 @@
+{
+  "name": "varkala_react",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@svgr/webpack": "^6.4.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.1",
+    "leaflet": "^1.9.1",
+    "next": "^12.3.1",
+    "nouislider-react": "^3.4.1",
+    "nprogress": "^0.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.1.0",
+    "react-inner-image-zoom": "^3.0.2",
+    "react-parallax": "^3.5.1",
+    "react-responsive-masonry": "^2.1.4",
+    "react-scroll": "^1.8.7",
+    "react-select": "^5.4.0",
+    "react-syntax-highlighter": "^15.4.5",
+    "sass": "^1.28.0",
+    "swiper": "^8.4.2",
+    "yet-another-react-lightbox": "^2.1.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 80,
+    "semi": false
+  }
+}

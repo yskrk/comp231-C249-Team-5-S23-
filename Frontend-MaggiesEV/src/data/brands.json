@@ -1,0 +1,34 @@
+[
+    {
+        "label": "Calvin Klein",
+        "productcount": 18,
+        "value": "brand0",
+        "checked": true,
+        "name": "clothes-brand"
+    },
+    {
+        "label": "Levi Strauss",
+        "productcount": 30,
+        "value": "brand1",
+        "checked": true,
+        "name": "clothes-brand"
+    },
+    {
+        "label": "Hugo Boss",
+        "productcount": 120,
+        "value": "brand2",
+        "name": "clothes-brand"
+    },
+    {
+        "label": "Tomi Hilfiger",
+        "productcount": 70,
+        "value": "brand3",
+        "name": "clothes-brand"
+    },
+    {
+        "label": "Tom Ford",
+        "productcount": 110,
+        "value": "brand4",
+        "name": "clothes-brand"
+    }
+]

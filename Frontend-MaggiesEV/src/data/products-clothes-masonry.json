@@ -1,0 +1,89 @@
+[
+    {
+        "name": "White Tee",
+        "link": "/detail-1",
+        "img": "/img/product/serrah-galos-494312-unsplash-cropped.jpg",
+        "price": "40",
+        "stars": 3,
+        "new": true
+    },
+    {
+        "name": "Black blouse",
+        "link": "/detail-1",
+        "img": "/img/product/0950354513_1_1_1.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "College jacket",
+        "link": "/detail-1",
+        "img": "/img/product/5161335400_1_1_1-cropped.jpg",
+        "price": "40",
+        "stars": 3,
+        "sale": true
+    },
+    {
+        "name": "Carrot-fit jeans",
+        "link": "/detail-1",
+        "img": "/img/product/0027211800_1_2_1.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Striped T-Shirt",
+        "link": "/detail-1",
+        "img": "/img/product/serrah-galos-494231-unsplash-cropped.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Short top",
+        "link": "/detail-1",
+        "img": "/img/product/averie-woodard-319832-unsplash-cropped.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Ethnic Sweater",
+        "link": "/detail-1",
+        "img": "/img/product/0364326148_1_1_1.jpg",
+        "price": "40",
+        "stars": 3,
+        "soldout": true
+    },
+    {
+        "name": "Beige",
+        "link": "/detail-1",
+        "img": "/img/product/0931168712_1_1_1.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Skull Tee",
+        "link": "/detail-1",
+        "img": "/img/product/1000962306_1_1_1.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Trucker jacket",
+        "link": "/detail-1",
+        "img": "/img/product/alex-holyoake-571682-unsplash-cropped.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Blouse",
+        "link": "/detail-1",
+        "img": "/img/product/0907168607_1_1_1.jpg",
+        "price": "40",
+        "stars": 3
+    },
+    {
+        "name": "Shirt",
+        "link": "/detail-1",
+        "img": "/img/product/5806513505_1_2_1.jpg",
+        "price": "40",
+        "stars": 3
+    }
+]

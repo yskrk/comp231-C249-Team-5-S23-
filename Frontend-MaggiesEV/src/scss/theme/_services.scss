@@ -1,0 +1,19 @@
+/*
+* ===================================================
+*     Services block in footer
+* ===================================================
+*/
+
+.service-column {
+  display: flex;
+  align-items: center;
+}
+
+.service-icon {
+  width: 32px !important;
+  height: 32px !important;
+  margin-top: -1rem;
+  margin-right: 1rem;
+  color: $primary;
+  color: $gray-700;
+}

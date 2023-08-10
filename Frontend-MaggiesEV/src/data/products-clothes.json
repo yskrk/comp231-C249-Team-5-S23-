@@ -1,0 +1,671 @@
+[
+  {
+    "name": "White Tee",
+    "link": "/detail-1",
+    "slug": "white-tee",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0987188250_1_1_1.jpg",
+          "alt": "product",
+          "color": "#7067f2"
+        },
+        {
+          "img": "/img/product/0987188250_2_1_1.jpg",
+          "alt": "product",
+          "color": "#a0cfff"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/serrah-galos-494312-unsplash-cropped.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3,
+    "new": true
+  },
+  {
+    "name": "Black blouse",
+    "link": "/detail-1",
+    "slug": "black-blouse",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0950354513_1_1_1.jpg",
+          "alt": "product"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/0950354513_1_1_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "College jacket",
+    "link": "/detail-1",
+    "slug": "college-jacket",
+    "category": ["Jackets", "jackets"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/5161335400_1_1_1.jpg",
+          "alt": "product",
+          "color": "#72a6b6"
+        },
+        {
+          "img": "/img/product/5161335400_2_3_1.jpg",
+          "alt": "product",
+          "color": "#7ede9a"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/5161335400_1_1_1-cropped.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3,
+    "sale": true
+  },
+  {
+    "name": "Carrot-fit jeans",
+    "link": "/detail-1",
+    "slug": "carrot-fit-jeans",
+    "category": ["Jeans", "jeans"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0027211800_1_2_1.jpg",
+          "alt": "product",
+          "color": "#414c54"
+        },
+        {
+          "img": "/img/product/0027211800_2_1_1.jpg",
+          "alt": "product",
+          "color": "#85e4ec"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/0027211800_1_2_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Striped T-Shirt",
+    "link": "/detail-1",
+    "slug": "striped-t-shirt",
+    "category": ["Shirts", "shirts"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0144074800_1_1_1.jpg",
+          "alt": "product"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/serrah-galos-494231-unsplash-cropped.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Short top",
+    "link": "/detail-1",
+    "slug": "short-top",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0693492802_1_1_1.jpg",
+          "alt": "product",
+          "color": "#f394f3"
+        },
+        {
+          "img": "/img/product/0693492802_2_1_1.jpg",
+          "alt": "product",
+          "color": "#1cc768"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/averie-woodard-319832-unsplash-cropped.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Ethnic Sweater",
+    "link": "/detail-1",
+    "slug": "ethnic-sweater",
+    "category": ["Sweaters", "sweaters"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0364326148_1_1_1.jpg",
+          "alt": "product",
+          "color": "#d8e8e8"
+        },
+        {
+          "img": "/img/product/0364326148_2_1_1.jpg",
+          "alt": "product",
+          "color": "#7ede9a"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/0364326148_1_1_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3,
+    "soldout": true
+  },
+  {
+    "name": "Beige",
+    "link": "/detail-1",
+    "slug": "beige",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0931168712_1_1_1.jpg",
+          "alt": "product"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/0931168712_1_1_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Skull Tee",
+    "link": "/detail-1",
+    "slug": "skull-tee",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/1000962306_1_1_1.jpg",
+          "alt": "product",
+          "color": "#7067f2"
+        },
+        {
+          "img": "/img/product/1000962306_2_1_1.jpg",
+          "alt": "product",
+          "color": "#a0cfff"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/1000962306_1_1_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Trucker jacket",
+    "link": "/detail-1",
+    "slug": "trucker-jacket",
+    "category": ["Jackets", "jackets"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0915494643_1_1_1.jpg",
+          "alt": "product"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/alex-holyoake-571682-unsplash-cropped.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Blouse",
+    "link": "/detail-1",
+    "slug": "blouse",
+    "category": ["Tops & blouses", "tops-blouses"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/0907168607_1_1_1.jpg",
+          "alt": "product"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/0907168607_1_1_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  },
+  {
+    "name": "Shirt",
+    "link": "/detail-1",
+    "slug": "shirt",
+    "category": ["Shirts", "shirts"],
+    "img": {
+      "category": [
+        {
+          "img": "/img/product/5806513505_1_2_1.jpg",
+          "alt": "product",
+          "color": "#414c54"
+        },
+        {
+          "img": "/img/product/5806513505_2_1_1.jpg",
+          "alt": "product",
+          "color": "#85e4ec"
+        }
+      ],
+      "masonry": {
+        "img": "/img/product/5806513505_1_2_1.jpg",
+        "alt": "product"
+      },
+      "detail": [
+        {
+          "img": "/img/product/detail-3-gray.jpg",
+          "caption": "Push-up Jeans 1 - Caption text",
+          "alt": "Push-up Jeans 1"
+        },
+        {
+          "img": "/img/product/detail-1-gray.jpg",
+          "caption": "Push-up Jeans 2 - Caption text",
+          "alt": "Push-up Jeans 2"
+        },
+        {
+          "img": "/img/product/detail-2-gray.jpg",
+          "caption": "Push-up Jeans 3 - Caption text",
+          "alt": "Push-up Jeans 3"
+        },
+        {
+          "img": "/img/product/detail-4-gray.jpg",
+          "caption": "Push-up Jeans 4 - Caption text",
+          "alt": "Push-up Jeans 4"
+        },
+        {
+          "img": "/img/product/detail-5-gray.jpg",
+          "caption": "Push-up Jeans 5 - Caption text",
+          "alt": "Push-up Jeans 5"
+        },
+        {
+          "img": "/img/product/detail-6.jpg",
+          "caption": "Push-up Jeans 6 - Caption text",
+          "alt": "Push-up Jeans 6"
+        }
+      ]
+    },
+    "price": 40,
+    "stars": 3
+  }
+]

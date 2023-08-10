@@ -1,0 +1,46 @@
+/*
+* ===================================================
+*    Containers
+* ===================================================
+*/
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.container-fluid-px {
+  @include media-breakpoint-up(lg) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+
+.container-boxed {
+  .container-fluid-px {
+    @include media-breakpoint-up(lg) {
+      padding-right: $grid-gutter-width;
+      padding-left: $grid-gutter-width;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-right: $grid-gutter-width;
+      padding-left: $grid-gutter-width;
+    }
+  }
+}
+
+.container-boxed {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: $box-shadow;
+}

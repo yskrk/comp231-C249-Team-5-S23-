@@ -1,0 +1,11 @@
+/*
+* ===================================================
+*    AOS additional styles
+* ===================================================
+*/
+
+@include media-breakpoint-down('md') {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+}

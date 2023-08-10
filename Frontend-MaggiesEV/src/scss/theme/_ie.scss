@@ -1,0 +1,40 @@
+/*
+* ===================================================
+*    IE Fixes
+* ===================================================
+*/
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+
+    .card {
+        display: block;
+    }
+
+    .card-img-top,
+    .card-img-bottom,
+    .card-img {
+        //width: auto;
+        min-width: 100%;
+        height: auto;
+    }
+
+    .product-stars,
+    .product-hover-overlay {
+        transition: none;
+    }
+
+    .swiper-thumb-item {
+        width: 100px;
+    }
+
+    .sidebar-cart-footer {
+        max-width: 500px;
+    }
+
+    .navbar .input-group-underlined {
+        min-width: 200px;
+    }
+    
+
+}

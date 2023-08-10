@@ -1,0 +1,17 @@
+/*
+* ===================================================
+*     Breadcrumb
+* ===================================================
+*/
+
+.breadcrumb {
+    padding-left: 0;
+    font-size: $font-size-sm;
+}
+
+.hero-image,
+.hero-boxed {
+    .breadcrumb {
+        justify-content: center;
+    }
+}

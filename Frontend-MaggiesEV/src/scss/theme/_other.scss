@@ -1,0 +1,105 @@
+/*
+* ===================================================
+*    Bootstrap elements additional styles
+* ===================================================
+*/
+
+.card {
+  box-shadow: $card-shadow;
+}
+
+.horizontal-line {
+  width: 50%;
+  margin-top: 0.5rem;
+  border-top: solid 1px $gray-700;
+}
+
+.nav-link.active {
+  color: $primary;
+}
+
+.list-group {
+  border-radius: $list-group-border-radius;
+}
+
+.btn-close-absolute {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transition: all linear 0.1s;
+  z-index: $zindex-modal + 1;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  &.close-centered {
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+}
+
+.btn-close-lg {
+  width: 2em;
+  height: 2em;
+}
+
+.btn-close-rotate {
+  transition: all linear 0.1s;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.close.text-inherit {
+  &:hover {
+    color: inherit;
+  }
+}
+
+label.custom-control-label {
+  cursor: pointer;
+}
+
+.alert-dismissible .btn-close {
+  outline: none;
+  transition: all linear 0.1s;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    transform: translateY(-50%) rotate(90deg);
+  }
+}
+
+.tab-pane.active {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.masonry-image {
+  > span {
+    position: relative !important;
+    img {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
+}

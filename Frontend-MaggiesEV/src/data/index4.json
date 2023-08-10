@@ -1,0 +1,77 @@
+{
+    "swiper": [
+        {
+            "name": "Black & White",
+            "subtitle": "Our all-time favourites",
+            "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+            "button": "Discover more",
+            "link": "#",
+            "img": "/img/product/chair2-transparent.png",
+            "subtitleclass": "text-dark mb-3",
+            "titleclass": "display-3",
+            "contentclass": " pt-5 pt-md-0",
+            "color": "#ffdddd"
+        },
+        {
+            "name": "Design clocks on sale",
+            "subtitle": "Time is almost up",
+            "button": "Start shopping",
+            "link": "#",
+            "img": "/img/product/clock-transparent.png",
+            "subtitleclass": "text-dark mb-3",
+            "titleclass": "display-3 mb-5",
+            "contentclass": " pt-5 pt-md-0",
+            "color": "#e7eaf9"
+        },
+        {
+            "name": "Boxxez",
+            "subtitle": "Our all-time favourites",
+            "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+            "button": "Discover more",
+            "link": "#",
+            "img": "/img/product/box-transparent.png",
+            "subtitleclass": "text-dark mb-3",
+            "titleclass": "display-3",
+            "contentclass": " pt-5 pt-md-0",
+            "color": "#f5e6a8"
+        }
+    ],
+    "featuredcategories": [
+        {
+            "name": "Chairs",
+            "subtitle": "Wood & Metal",
+            "link": "#",
+            "button": "See Chairs",
+            "img": "/img/product/category-chair2.jpg",
+            "color": "#c3e3e0",
+            "subtitlecolor": "#3b5d59"
+        },
+        {
+            "name": "Accessories",
+            "subtitle": "The little things",
+            "link": "#",
+            "button": "See Accessories",
+            "img": "/img/product/category-boxes.jpg",
+            "color": "#f8f0cc",
+            "subtitlecolor": "#6d5900"
+        },
+        {
+            "name": "Books",
+            "subtitle": "Something about books",
+            "link": "#",
+            "button": "See Books",
+            "img": "/img/product/category-books.jpg",
+            "color": "#ffd4d2",
+            "subtitlecolor": "#7d514f"
+        },
+        {
+            "name": "Clocks",
+            "subtitle": "Tik tak",
+            "link": "#",
+            "button": "See Clocks",
+            "img": "/img/product/category-clocks.jpg",
+            "color": "#cddeff",
+            "subtitlecolor": "#46619a"
+        }
+    ]
+}

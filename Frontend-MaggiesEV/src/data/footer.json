@@ -1,0 +1,83 @@
+{
+    "newsletter": {
+        "name": "Be in touch",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus."
+    },
+    "columns": [
+        {
+            "name": "Shop",
+            "links": [
+                {
+                    "name": "For Women",
+                    "link": "#"
+                },
+                {
+                    "name": "For Men",
+                    "link": "#"
+                },
+                {
+                    "name": "Stores",
+                    "link": "#"
+                },
+                {
+                    "name": "Our Blog",
+                    "link": "#"
+                },
+                {
+                    "name": "Shop",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Company",
+            "links": [
+                {
+                    "name": "Login",
+                    "link": "#"
+                },
+                {
+                    "name": "Register",
+                    "link": "#"
+                },
+                {
+                    "name": "Wishlist",
+                    "link": "#"
+                },
+                {
+                    "name": "Our Products",
+                    "link": "#"
+                },
+                {
+                    "name": "Checkouts",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Your account",
+            "links": [
+                {
+                    "name": "Login",
+                    "link": "#"
+                },
+                {
+                    "name": "Register",
+                    "link": "#"
+                },
+                {
+                    "name": "Wishlist",
+                    "link": "#"
+                },
+                {
+                    "name": "Our Products",
+                    "link": "#"
+                },
+                {
+                    "name": "Checkouts",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}

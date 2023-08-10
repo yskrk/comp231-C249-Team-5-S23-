@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Skull Tee",
+        "price": "65.00",
+        "link": "/detail-1",
+        "img": "/img/product/product-square-ian-dooley-347968-unsplash.jpg",
+        "attributes": [
+            {
+                "name": "Size",
+                "value": "Large"
+            },
+            {
+                "name": "Colour",
+                "value": "Green"
+            }
+        ]
+    },
+    {
+        "name": "Transparent Blouse",
+        "price": "55.00",
+        "link": "/detail-1",
+        "img": "/img/product/product-square-kyle-loftus-596319-unsplash.jpg",
+        "attributes": [
+            {
+                "name": "Size",
+                "value": "Medium"
+            }
+        ]
+    },
+    {
+        "name": "White Tee",
+        "price": "55.00",
+        "link": "/detail-1",
+        "img": "/img/product/product-square-serrah-galos-494312-unsplash.jpg",
+        "attributes": [
+            {
+                "name": "Size",
+                "value": "Medium"
+            }
+        ]
+    }
+]

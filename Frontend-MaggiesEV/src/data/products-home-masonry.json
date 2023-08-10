@@ -1,0 +1,559 @@
+[
+    {
+        "name": "Norwegg Chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair-2-sq.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3,
+        "new": true
+    },
+    {
+        "name": "Book",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/book.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Another chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair2.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3,
+        "sale": true
+    },
+    {
+        "name": "Your new chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair3-sq.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Clock",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/clock.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Clock",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/clock3.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Accessory box",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/box.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3,
+        "soldout": true
+    },
+    {
+        "name": "Beige",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/box2-sq.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Norwegg Chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair2-2.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3,
+        "new": true
+    },
+    {
+        "name": "Book",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/book.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Another chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair2.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3
+    },
+    {
+        "name": "Your new chair",
+        "link": "/detail-1",
+        "img": {
+            "category": [
+                {
+                    "img": "/img/product/chair3-sq.jpg",
+                    "alt": "product"
+                }
+            ],
+            "detail": [
+                {
+                    "img": "/img/product/detail-3-gray.jpg",
+                    "caption": "Push-up Jeans 1 - Caption text",
+                    "alt": "Push-up Jeans 1"
+                },
+                {
+                    "img": "/img/product/detail-1-gray.jpg",
+                    "caption": "Push-up Jeans 2 - Caption text",
+                    "alt": "Push-up Jeans 2"
+                },
+                {
+                    "img": "/img/product/detail-2-gray.jpg",
+                    "caption": "Push-up Jeans 3 - Caption text",
+                    "alt": "Push-up Jeans 3"
+                },
+                {
+                    "img": "/img/product/detail-4-gray.jpg",
+                    "caption": "Push-up Jeans 4 - Caption text",
+                    "alt": "Push-up Jeans 4"
+                },
+                {
+                    "img": "/img/product/detail-5-gray.jpg",
+                    "caption": "Push-up Jeans 5 - Caption text",
+                    "alt": "Push-up Jeans 5"
+                },
+                {
+                    "img": "/img/product/detail-6.jpg",
+                    "caption": "Push-up Jeans 6 - Caption text",
+                    "alt": "Push-up Jeans 6"
+                }
+            ]
+        },
+        "price": 40,
+        "stars": 3,
+        "sale": true
+    }
+]

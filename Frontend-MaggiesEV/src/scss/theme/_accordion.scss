@@ -1,0 +1,31 @@
+/*
+* ===================================================
+*    Accordion
+* ===================================================
+*/
+
+.card-header.accordion-header {
+  overflow: hidden;
+  padding: 0;
+}
+.accordion-link {
+  display: block;
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  color: $white;
+  background: $primary;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &.collapsed {
+    color: $gray-800;
+    background: $gray-100;
+  }
+}

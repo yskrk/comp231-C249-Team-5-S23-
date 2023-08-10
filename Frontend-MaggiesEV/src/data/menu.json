@@ -1,0 +1,468 @@
+[
+  {
+    "name": "Home",
+    "links": [
+      {
+        "name": "Home 1 - Fashion",
+        "link": "/"
+      },
+      {
+        "name": "Home 2 - Fashion",
+        "link": "/index-2"
+      },
+      {
+        "name": "Home 3 - Design",
+        "link": "/index-3",
+        "new": true
+      },
+      {
+        "name": "Home 4 - Design",
+        "link": "/index-4",
+        "new": true
+      }
+    ]
+  },
+  {
+    "name": "Shop",
+    "groups": [
+      {
+        "name": "Shop pages",
+        "links": [
+          {
+            "name": "Full width",
+            "link": "/category-full"
+          },
+          {
+            "name": "Full width with category menu",
+            "link": "/category-full-sidebar"
+          },
+          {
+            "name": "Full width with big products",
+            "link": "/category-big-products"
+          },
+          {
+            "name": "Fixed width",
+            "link": "/category-boxed"
+          },
+          {
+            "name": "Fixed width & sidebar",
+            "link": "/category-sidebar"
+          },
+          {
+            "name": "Fixed width & masonry layout",
+            "link": "/category-masonry",
+            "new": true
+          },
+          {
+            "name": "Subcategories",
+            "link": "/category-categories"
+          }
+        ]
+      },
+      {
+        "name": "Product pages",
+        "links": [
+          {
+            "name": "Product with sticky info",
+            "link": "/detail-1"
+          },
+          {
+            "name": "Product with background",
+            "link": "/detail-2"
+          },
+          {
+            "name": "Product standard",
+            "link": "/detail-3"
+          }
+        ]
+      },
+      {
+        "img": "/img/product/kyle-loftus-596319-unsplash-cropped.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Product Cards",
+    "size": "sm",
+    "groups": [
+      {
+        "name": "Shop Cards",
+        "links": [
+          {
+            "name": "Default",
+            "link": "/listing-0"
+          },
+          {
+            "name": "Product Card 1",
+            "link": "/listing-1"
+          },
+          {
+            "name": "Product Card 2",
+            "link": "/listing-2"
+          },
+          {
+            "name": "Product Card 3",
+            "link": "/listing-3"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "name": "Product Card 4",
+            "link": "/listing-4"
+          },
+          {
+            "name": "Product Card 5",
+            "link": "/listing-5"
+          },
+          {
+            "name": "Product Card 6",
+            "link": "/listing-6"
+          },
+          {
+            "name": "Product Card 7",
+            "link": "/listing-7"
+          }
+        ]
+      },
+      {
+        "img": "/img/product/0950354513_1_1_1.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Icons",
+    "text": "Don't miss our biggest sales this year. Use the code 'SUMMER35' at checkout until Jun. 15!",
+    "icons": [
+      {
+        "name": "Trousers",
+        "link": "/category-categories",
+        "icon": "trousers-1"
+      },
+      {
+        "name": "Jackets",
+        "link": "/category-categories",
+        "icon": "suit-1"
+      },
+      {
+        "name": "T-Shirts",
+        "link": "/category-categories",
+        "icon": "shirt5-1"
+      },
+      {
+        "name": "Shirts",
+        "link": "/category-categories",
+        "icon": "shirt1-1"
+      },
+      {
+        "name": "Pullovers",
+        "link": "/category-categories",
+        "icon": "pullover-1"
+      },
+      {
+        "name": "Scarfs",
+        "link": "/category-categories",
+        "icon": "scarf-1"
+      },
+      {
+        "name": "Shorts",
+        "link": "/category-categories",
+        "icon": "shorts1-1"
+      },
+      {
+        "name": "Underwear",
+        "link": "/category-categories",
+        "icon": "underwear1-1"
+      },
+      {
+        "name": "Watches",
+        "link": "/category-categories",
+        "icon": "watch-1"
+      },
+      {
+        "name": "Bags",
+        "link": "/category-categories",
+        "icon": "portfolio-1"
+      },
+      {
+        "name": "Caps",
+        "link": "/category-categories",
+        "icon": "cap-1"
+      },
+      {
+        "name": "Accessories",
+        "link": "/category-categories",
+        "icon": "bowtie-1"
+      }
+    ]
+  },
+  {
+    "name": "Pages",
+    "megamenu": true,
+    "columns": [
+      {
+        "img": "/img/blog/christopher-campbell-28571-unsplash.jpg",
+        "lists": [
+          {
+            "name": "Homepage",
+            "links": [
+              {
+                "name": "Home 1 - Fashion",
+                "link": "/",
+                "parent": "Home"
+              },
+              {
+                "name": "Home 2 - Fashion",
+                "link": "/index-2",
+                "parent": "Home"
+              },
+              {
+                "name": "Home 3 - Design",
+                "link": "/index-3",
+                "new": true,
+                "parent": "Home"
+              },
+              {
+                "name": "Home 4 - Design",
+                "link": "/index-4",
+                "new": true,
+                "parent": "Home"
+              }
+            ]
+          },
+          {
+            "name": "Category",
+            "links": [
+              {
+                "name": "Full width",
+                "link": "/category-full"
+              },
+              {
+                "name": "Full width with category menu",
+                "link": "/category-full-sidebar"
+              },
+              {
+                "name": "Full width with big products",
+                "link": "/category-big-products"
+              },
+              {
+                "name": "Fixed width",
+                "link": "/category-boxed"
+              },
+              {
+                "name": "Fixed width & sidebar",
+                "link": "/category-sidebar"
+              },
+              {
+                "name": "Fixed width & masonry layout",
+                "link": "/category-masonry",
+                "new": true
+              },
+              {
+                "name": "Subcategories",
+                "link": "/category-categories"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "img": "/img/blog/ian-dooley-347962-unsplash.jpg",
+        "lists": [
+          {
+            "name": "Order process",
+            "links": [
+              {
+                "name": "Shopping cart",
+                "link": "/cart"
+              },
+              {
+                "name": "Checkout - Five steps",
+                "link": "/checkout1",
+                "new": true
+              },
+              {
+                "name": "Checkout - Single-page",
+                "link": "/checkout"
+              },
+              {
+                "name": "Checkout - confirmed",
+                "link": "/checkout-confirmed"
+              },
+              {
+                "name": "Wishlist",
+                "link": "/wishlist"
+              }
+            ]
+          },
+          {
+            "name": "Product",
+            "links": [
+              {
+                "name": "Product with sticky info",
+                "link": "/detail-1"
+              },
+              {
+                "name": "Product with background",
+                "link": "/detail-2"
+              },
+              {
+                "name": "Product standard",
+                "link": "/detail-3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "img": "/img/blog/ian-dooley-347942-unsplash.jpg",
+        "lists": [
+          {
+            "name": "Blog",
+            "links": [
+              {
+                "name": "Blog",
+                "link": "/blog"
+              },
+              {
+                "name": "Blog - Masonry",
+                "link": "/blog-masonry"
+              },
+              {
+                "name": "Post",
+                "link": "/post"
+              }
+            ]
+          },
+          {
+            "name": "Page",
+            "links": [
+              {
+                "name": "About - Company",
+                "link": "/about",
+                "new": true
+              },
+              {
+                "name": "About v.2 - Person",
+                "link": "/about-2",
+                "new": true
+              },
+              {
+                "name": "F.A.Q.",
+                "link": "/faq",
+                "new": true
+              },
+              {
+                "name": "Contact",
+                "link": "/contact"
+              },
+              {
+                "name": "Privacy policy",
+                "link": "/privacy",
+                "new": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "img": "/img/blog/photo-1534126511673-b6899657816a.jpg",
+        "lists": [
+          {
+            "name": "Customer",
+            "links": [
+              {
+                "name": "Login/sign up",
+                "link": "/customer-login",
+                "new": true
+              },
+              {
+                "name": "Orders",
+                "link": "/customer-orders",
+                "new": true
+              },
+              {
+                "name": "Order detail",
+                "link": "/customer-order",
+                "new": true
+              },
+              {
+                "name": "Order tracking",
+                "link": "/customer-order-tracking",
+                "new": true
+              },
+              {
+                "name": "Addresses",
+                "link": "/customer-addresses",
+                "new": true
+              },
+              {
+                "name": "Profile",
+                "link": "/customer-account",
+                "new": true
+              },
+              {
+                "name": "Wishlist",
+                "link": "/customer-wishlist",
+                "new": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Docs",
+    "links": [
+      {
+        "name": "Documentation",
+        "divider": true
+      },
+      {
+        "name": "Introduction",
+        "link": "/docs/introduction"
+      },
+      {
+        "name": "Directory structure",
+        "link": "/docs/directory-structure"
+      },
+      {
+        "name": "Next.js",
+        "link": "/docs/next"
+      },
+      {
+        "name": "Customizing CSS",
+        "link": "/docs/customizing-css"
+      },
+      {
+        "name": "Demo Data",
+        "link": "/docs/demo-data"
+      },
+      {
+        "name": "Credits",
+        "link": "/docs/credits"
+      },
+      {
+        "name": "Changelog",
+        "link": "/docs/changelog"
+      },
+      {
+        "divider": true
+      },
+      {
+        "name": "Components",
+        "divider": true
+      },
+      {
+        "name": "Bootstrap",
+        "link": "/docs/components-bootstrap"
+      },
+      {
+        "name": "Theme",
+        "link": "/docs/components-theme"
+      }
+    ]
+  }
+]

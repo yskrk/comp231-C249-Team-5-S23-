@@ -1,0 +1,91 @@
+{
+  "swiper": [
+    {
+      "name": "Blouses & Tops",
+      "subtitle": "Our all-time favourites",
+      "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+      "button": "Discover more",
+      "link": "#",
+      "img": "/img/photo/home-5.jpg",
+      "titleclass": "display-3",
+      "subtitleclass": "mb-3 text-dark",
+      "bgdirection": "left",
+      "contentclass": "ms-auto"
+    },
+    {
+      "name": "Blouses & Tops",
+      "subtitle": "Our all-time favourites",
+      "text": "The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit",
+      "button": "Discover more",
+      "link": "#",
+      "img": "/img/photo/home-1.jpg",
+      "subtitleclass": "mb-3 text-dark",
+      "titleclass": "display-3"
+    },
+    {
+      "name": "Linen and denim",
+      "subtitle": "Blue &amp; White",
+      "button": "Start shopping",
+      "link": "#",
+      "img": "/img/photo/home-2.jpg",
+      "titleclass": "display-3",
+      "subtitleclass": "mb-3 text-dark",
+      "rowclass": "justify-content-center text-center"
+    }
+  ],
+  "maincategories": [
+    {
+      "name": "Jackets",
+      "subtitle": "Denim & parkas",
+      "bututon": "See Jackets",
+      "link": "/category-full",
+      "img": "/img/product/category-jackets-3-colour-bg-2.jpg",
+      "background": "#c6d5ea",
+      "subtitlecolor": "#425c81"
+    },
+    {
+      "name": "Coats",
+      "subtitle": "Get ready for winter",
+      "button": "See Coats",
+      "link": "/category-full",
+      "img": "/img/product/category-coats-2-colour-bg-2.jpg",
+      "background": "#fce6e8",
+      "subtitlecolor": "#94585e"
+    },
+    {
+      "name": "Dresses",
+      "subtitle": "Let yourself shine",
+      "button": "See Dresses",
+      "link": "/category-full",
+      "img": "/img/product/category-dresses-2-colour-bg-2.jpg",
+      "background": "#faf7e6",
+      "subtitlecolor": "#9e9056"
+    },
+    {
+      "name": "See Jeans",
+      "subtitle": "Latest denim trends",
+      "link": "/category-full",
+      "img": "/img/product/category-jeans-colour-bg-2.jpg",
+      "background": "#f8ebf5",
+      "subtitlecolor": "#9c5f8f"
+    },
+    {
+      "name": "Bags",
+      "subtitle": "Bags & accessories",
+      "button": "See Bags",
+      "link": "/category-full",
+      "img": "/img/product/category-bags-2-colour-bg-2.jpg",
+      "background": "#c9f2e4",
+      "subtitlecolor": "#418a70"
+    },
+    {
+      "name": "Shoes",
+      "subtitle": "Shoes & footwear",
+      "button": "See Shoes",
+      "link": "/category-full",
+      "img": "/img/product/category-shoes-colour-bg.jpg",
+      "background": "#ece2d6",
+      "subtitlecolor": "#775a3d"
+    }
+  ]
+}

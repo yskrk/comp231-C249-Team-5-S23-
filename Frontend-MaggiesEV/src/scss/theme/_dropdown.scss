@@ -1,0 +1,68 @@
+/*
+*
+* =====================
+* Dropdowns
+* =====================
+*
+*/
+.dropdown-menu-animated.dropdown-menu-end {
+  right: 0 !important;
+  left: auto !important;
+}
+
+.dropdown-menu-animated {
+  position: absolute;
+  margin: 0;
+  animation-name: AnimateDropdown;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  z-index: 1000;
+
+  &.megamenu {
+    animation-name: AnimateDropdownMegamenu;
+  }
+}
+
+.dropdown-menu-animated.show {
+  top: 100% !important;
+}
+
+.dropdown-menu-animated i {
+  display: inline-block;
+}
+
+.dropdown-menu-animated.dropdown-menu[data-popper-placement^="left"],
+.dropdown-menu-animated.dropdown-menu[data-popper-placement^="right"],
+.dropdown-menu-animated.dropdown-menu[data-popper-placement^="top"] {
+  top: auto !important;
+  animation: none !important;
+}
+
+.dropdown-menu.megamenu .megamenu-list-link.active,
+.dropdown-menu.megamenu .megamenu-list-link:active {
+  background: #fff;
+  color: #212529;
+  font-weight: 700;
+}
+@keyframes AnimateDropdown {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes AnimateDropdownMegamenu {
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  0% {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+  }
+}

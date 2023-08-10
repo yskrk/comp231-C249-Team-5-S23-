@@ -1,0 +1,24 @@
+// Bootstrap Select
+$color-red-error: rgb(185, 74, 72) !default;
+$color-green-success: #28a745;
+$color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
+$width-default: 220px !default; // 3 960px-grid columns
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+$input-color-placeholder: #999 !default;
+$input-alt-color-placeholder: rgba(255, 255, 255, 0.5) !default;
+
+// Swiper
+$swiperColor: $primary;
+$swiperColorDark: $dark;
+
+//PhotoSwipe
+
+$pswp__show-hide-transition-duration: 333ms !default;
+$pswp__controls-transition-duration: 333ms !default;
+$pswp__background-color: #000 !default;
+$pswp__placeholder-color: #222 !default;
+$pswp__box-sizing-border-box: true !default; // disable .pswp * { box-sizing:border-box } (in case you already have it in your site css)
+$pswp__root-z-index: 1500 !default;
+$pswp__assets-path: "photoswipe/" !default; // path to skin assets folder (preloader, PNG and SVG sprite)
+$pswp__error-text-color: #ccc !default; // "Image not loaded" text color
+$pswp__include-minimal-style: true !default;

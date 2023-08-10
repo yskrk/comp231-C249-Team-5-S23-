@@ -1,0 +1,22 @@
+[
+    {
+        "value": "value_sidebar_Blue",
+        "id": "colour_sidebar_Blue",
+        "color": "#668cb9"
+    },
+    {
+        "value": "value_sidebar_White",
+        "id": "colour_sidebar_White",
+        "color": "#fff"
+    },
+    {
+        "value": "value_sidebar_Violet",
+        "id": "colour_sidebar_Violet",
+        "color": "#8b6ea4"
+    },
+    {
+        "value": "value_sidebar_Red",
+        "id": "colour_sidebar_Red",
+        "color": "#dd6265"
+    }
+]

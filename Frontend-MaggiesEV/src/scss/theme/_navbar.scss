@@ -1,0 +1,338 @@
+/*
+* ===================================================
+*     Navbar
+* ===================================================
+*/
+
+// Absolutely position header, used on the homepage
+// w/ the image background behind it
+.header-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: $zindex-fixed;
+}
+
+// Used for navbar w/ transparent background
+.bg-hover-white {
+  @include simpleTransition;
+
+  &:hover {
+    background: $white !important;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid $gray-100;
+  box-shadow: 0 5px 10px rgba($black, 0.05);
+
+  /* align with the navbar bottom */
+  .dropdown-menu {
+    margin-top: $navbar-padding-y;
+  }
+
+  /* align with the navbar bottom */
+  .megamenu {
+    margin-top: -1px;
+    z-index: 20;
+  }
+
+  .nav-item,
+  .nav-link {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /* custom dropdown toggle */
+
+  .dropdown-toggle {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      top: 10px;
+      right: 2px;
+      margin-left: 0;
+      transition: 0.2s;
+      border: none;
+    }
+
+    &[aria-expanded="true"] {
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+// Dropdown menus in navbar offset from the top
+// and also setting the max-height for the sticky navbar's menu
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($next) {
+        padding: $navbar-padding-y-collapsed $navbar-padding-x;
+
+        .dropdown-menu {
+          margin-top: 0;
+          border: none;
+          box-shadow: none;
+        }
+
+        &.navbar-sticky {
+          .navbar-collapse {
+            overflow-y: auto;
+            max-height: 80vh;
+
+            &.collapsing {
+              overflow-y: hidden;
+            }
+          }
+        }
+        .dropdown-menu.megamenu {
+          left: 0;
+        }
+
+        .dropdown-menu.megamenu.dropdown-menu-animated {
+          animation-name: AnimateDropdown;
+        }
+      }
+      @include media-breakpoint-up($next) {
+        .dropdown-menu.dropdown-menu-sm {
+          width: 35rem;
+        }
+        .dropdown-menu.dropdown-menu-md {
+          width: 45rem;
+        }
+
+        .navbar-nav {
+          .nav-link.dropdown-toggle {
+            padding-right: $navbar-nav-link-padding-x + 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+// Dark links against a light background
+.navbar-light,
+.navbar-hover-light:hover,
+.navbar-fixed-light.fixed-top {
+  .navbar-brand {
+    color: $navbar-light-active-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $dark;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-light-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+  }
+  .dropdown-toggle:not(.dropdown-avatar) {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-light-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+
+  .show,
+  .active > .dropdown-toggle:not(.dropdown-avatar),
+  .dropdown-toggle:not(.dropdown-avatar).active,
+  .dropdown-toggle:not(.dropdown-avatar):hover,
+  .dropdown-toggle:not(.dropdown-avatar):focus {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-light-hover-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+}
+
+.navbar-light,
+.top-bar {
+  .dropdown-toggle:not(.dropdown-avatar) {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-light-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+
+  .show > .dropdown-toggle:not(.dropdown-avatar),
+  .dropdown-toggle:not(.dropdown-avatar).active,
+  .dropdown-toggle:not(.dropdown-avatar):hover,
+  .dropdown-toggle:not(.dropdown-avatar):focus {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-light-hover-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+}
+
+.navbar-dark {
+  .dropdown-toggle:not(.dropdown-avatar) {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-dark-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+  .show > .dropdown-toggle:not(.dropdown-avatar),
+  .dropdown-toggle:not(.dropdown-avatar).active,
+  .dropdown-toggle:not(.dropdown-avatar):hover,
+  .dropdown-toggle:not(.dropdown-avatar):focus {
+    &::after {
+      $dropdownToggleSvg: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'><title>Angle Down</title><desc>A line styled icon from Orion Icon Library.</desc><path data-name='layer1' fill='none' stroke='#{$navbar-dark-hover-color}' stroke-miterlimit='10' stroke-width='7' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'></path></svg>");
+      background: right center escape-svg($dropdownToggleSvg) no-repeat;
+    }
+  }
+}
+
+// Light links against a dark background
+.navbar-dark,
+.navbar-hover-dark:hover,
+.navbar-fixed-dark.fixed-top {
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $light;
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+  }
+}
+
+/*
+* ===================================================
+*     Megamenu
+* ===================================================
+*/
+.dropdown-menu.megamenu {
+  overflow: hidden;
+  left: 50%;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: -2px;
+  border: none !important;
+  z-index: 9999;
+
+  .megamenu-list {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .megamenu-list-item {
+    margin-bottom: 5px;
+  }
+
+  .megamenu-list-link {
+    padding: 5px 0;
+    text-decoration: none;
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-900;
+      background: none;
+    }
+  }
+}
+
+.svg-icon.navbar-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+// shopping cart badge with no. of items
+.navbar-icon-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: $white;
+  border-radius: 50%;
+  background: $primary;
+  font-size: 0.6rem;
+  line-height: 20px;
+}

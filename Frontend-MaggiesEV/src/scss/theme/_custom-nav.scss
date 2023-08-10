@@ -1,0 +1,77 @@
+/*
+* ===================================================
+*    Custom Nav
+* ===================================================
+*/
+
+.nav-pills.custom-nav {
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+}
+
+.custom-nav .nav-item {
+  background: $gray-100;
+  align-self: stretch;
+  &:last-of-type {
+    .nav-link {
+      border-right: none !important;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.custom-nav .nav-link {
+  position: relative;
+  height: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+
+  color: $gray-900;
+  border: none !important;
+  border-radius: 0 !important;
+  background: none;
+  background: none;
+  &.active {
+    color: #fff;
+    background: $primary;
+    &::after {
+      display: none;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed !important;
+    color: $gray-500;
+    background: $gray-100;
+  }
+  &::after {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    content: "";
+    background: #ddd;
+  }
+}
+
+/* Checkout Media Query -------------------- */
+
+@include media-breakpoint-down(lg) {
+  .custom-nav .nav-item {
+    width: 100% !important;
+    margin-bottom: 5px;
+    .nav-link {
+      border-right: none;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
