@@ -8,14 +8,6 @@
             "name": "Shop",
             "links": [
                 {
-                    "name": "For Women",
-                    "link": "#"
-                },
-                {
-                    "name": "For Men",
-                    "link": "#"
-                },
-                {
                     "name": "Stores",
                     "link": "#"
                 },
