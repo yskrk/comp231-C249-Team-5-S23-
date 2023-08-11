@@ -2,17 +2,22 @@ import React from "react"
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import Link from "next/link"
 
-import products from "../data/products-clothes.json"
-import CardProduct from "../components/CardProduct"
+import products from "../../data/products-clothes.json"
+import CardProduct from "../../components/CardProduct"
 
-import Pagination from "../components/Pagination"
-import CategoryTopBar from "../components/CategoryTopBar"
-import CategoriesMenu from "../components/CategoriesMenu"
-import Filters from "../components/Filters"
+import Pagination from "../../components/Pagination"
+import CategoryTopBar from "../../components/CategoryTopBar"
+import CategoriesMenu from "../../components/CategoriesMenu"
+import Filters from "../../components/Filters"
 
 
 
 export async function getServerSideProps() {
+
+    // TODO: DELETE
+    console.log("executing METHOD: getServerSideProps()..");
+
+
     const response = await fetch('http://localhost:3003/products');
     const data = await response.json();
 
@@ -32,6 +37,8 @@ export async function getServerSideProps() {
 
 const CategorySidebar = (props) => {
 
+
+
     // TODO:DELETE
     console.log("props ==> " + props.data);
     props.data.forEach(i => {
@@ -39,11 +46,39 @@ const CategorySidebar = (props) => {
     });
 
 
+    const [searchPhrase, setSearchPhrase] = React.useState("");
+    const [products, setProducts] = React.useState(props.data);
 
-    const productsFull = products.concat(products)
+
+    const onSearchBtnClick = async () => {
+        console.log("in METHOD: onSearchBtnClick()");
+        console.log("searchPhrase ==> " + searchPhrase);
+
+        try {
+            const queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
+            const response = await fetch(queryUrl); // Adjust the URL accordingly
+            const data = await response.json();
+
+            console.log("data...");
+
+            data.forEach((i) => {
+                console.log("i.name ==> " + i.name);
+                console.log("i.price ==> " + i.price);
+            });
+        } catch (error) {
+            console.error('Error fetching cars data:', error);
+        }
+    };
 
 
-    
+    const searchComponentProps = {
+        searchPhrase: searchPhrase,
+        setSearchPhrase: setSearchPhrase,
+        onSearchBtnClick: onSearchBtnClick
+    };
+
+
+
     return (
         <Container className="py-6">
 
@@ -62,9 +97,9 @@ const CategorySidebar = (props) => {
 
                 {/* Products */}
                 <Col xl="9" lg="8" className="products-grid order-lg-2">
-                    <CategoryTopBar />
+                    <CategoryTopBar searchComponentProps={searchComponentProps} />
                     <Row>
-                        {props.data.map((product, index) => (
+                        {products.map((product, index) => (
                             <Col key={index} xl="4" xs="6">
                                 <CardProduct product={product} />
                             </Col>

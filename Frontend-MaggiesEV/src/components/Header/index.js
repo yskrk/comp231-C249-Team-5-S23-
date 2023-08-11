@@ -94,7 +94,7 @@ const Header = ({ header }) => {
 
 
 				{/* MENU */}
-				<Navbar.Collapse>
+				<Navbar.Collapse className="d-flex justify-content-between">
 
 					<Nav className="mt-3 mt-lg-0" navbar>
 						<Nav.Item>
@@ -102,10 +102,6 @@ const Header = ({ header }) => {
 						</Nav.Item>
 					</Nav>
 
-
-					{/* SEARCH BLOCK */}
-					<SearchBlock />
-					{/* END SEARCH BLOCK */}
 
 					{/* TOP USER ICONS */}
 					<MyMainIcons className="d-none d-lg-block" sidebarRight />
