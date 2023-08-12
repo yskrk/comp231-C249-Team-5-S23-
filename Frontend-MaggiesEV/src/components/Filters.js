@@ -7,6 +7,7 @@ import PriceSlider from "./PriceSlider"
 
 const Filters = ({ top, brands }) => {
 
+	// TODO: Delete comments.
 	// // Filter inputs state where all inputs all stored.
 	// const [filterInputs, setFilterInputs] = React.useState({
 	// 	// Remove or customize on PROD - Some brands are preselected by "checked" property. Using reduce they're set default in state.

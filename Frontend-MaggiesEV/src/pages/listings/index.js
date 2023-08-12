@@ -51,20 +51,12 @@ const CategorySidebar = (props) => {
 
 
     const onSearchBtnClick = async () => {
-        console.log("in METHOD: onSearchBtnClick()");
-        console.log("searchPhrase ==> " + searchPhrase);
-
         try {
             const queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
-            const response = await fetch(queryUrl); // Adjust the URL accordingly
+            const response = await fetch(queryUrl); 
             const data = await response.json();
 
-            console.log("data...");
-
-            data.forEach((i) => {
-                console.log("i.name ==> " + i.name);
-                console.log("i.price ==> " + i.price);
-            });
+            setProducts(data);
         } catch (error) {
             console.error('Error fetching cars data:', error);
         }
