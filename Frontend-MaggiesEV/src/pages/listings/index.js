@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
+import fetch from 'isomorphic-fetch'; // Import the fetch function
+
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import Link from "next/link"
 
@@ -9,6 +11,7 @@ import Pagination from "../../components/Pagination"
 import CategoryTopBar from "../../components/CategoryTopBar"
 import CategoriesMenu from "../../components/CategoriesMenu"
 import Filters from "../../components/Filters"
+import { displayJsonContents } from "../../my-tools/my-helper";
 
 
 
@@ -37,29 +40,51 @@ export async function getServerSideProps() {
 
 const CategorySidebar = (props) => {
 
-
-
-    // TODO:DELETE
-    console.log("props ==> " + props.data);
-    props.data.forEach(i => {
-        console.log(`${i.name} ==> ${i.price} ==> ${i.description}`);
-    });
-
-
     const [searchPhrase, setSearchPhrase] = React.useState("");
     const [products, setProducts] = React.useState(props.data);
+    const [brands, setBrands] = React.useState(props.brands);
 
 
-    const onSearchBtnClick = async () => {
-        try {
-            const queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
-            const response = await fetch(queryUrl); 
-            const data = await response.json();
 
-            setProducts(data);
-        } catch (error) {
-            console.error('Error fetching cars data:', error);
-        }
+    useEffect(() => {
+        fetchFilteredProducts();
+    }, [brands]); // Run the effect whenever 'brands' state changes
+
+
+
+    const fetchFilteredProducts = () => {
+
+        // Extract names of selected brands.
+        const selectedBrands = [];
+        brands.forEach(b => {
+            if (b.isChecked) {
+                selectedBrands.push(b.name);
+            }
+        });
+
+        selectedBrands = selectedBrands.join(",");
+        console.log("selected brands ==> " + selectedBrands);
+
+
+        var queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
+        queryUrl += "&brands=" + selectedBrands;
+
+        // Fetch JSON data from the API
+        fetch(queryUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("THE REPONSE DATA ==> ...");
+
+                displayJsonContents(data);
+                setProducts(data.products);
+            })
+            .catch((error) => console.error('Error fetching data:', error));
+
+    };
+
+
+    const onSearchBtnClick = () => {
+        fetchFilteredProducts();
     };
 
 
@@ -67,6 +92,25 @@ const CategorySidebar = (props) => {
         searchPhrase: searchPhrase,
         setSearchPhrase: setSearchPhrase,
         onSearchBtnClick: onSearchBtnClick
+    };
+
+
+
+    const onBrandCheckBoxChange = async (e) => {
+
+        const name = e.target.name
+
+        const updatedBrands = brands.map((b) => {
+            if (b.name === name) {
+                // Modify the isChecked property for the triggered brand.
+                return { ...b, isChecked: !b.isChecked };
+            }
+            return b;
+        });
+
+
+        setBrands(updatedBrands);
+
     };
 
 
@@ -103,7 +147,7 @@ const CategorySidebar = (props) => {
                 {/* Filters                             */}
                 <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">
                     <CategoriesMenu />
-                    <Filters brands={props.brands} />
+                    <Filters brands={brands} onCheckBoxChange={onBrandCheckBoxChange} />
                 </Col>
 
             </Row>
