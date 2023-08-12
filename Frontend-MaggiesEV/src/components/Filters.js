@@ -15,7 +15,7 @@ const Filters = (props) => {
 
 
 	// Checkbox filter component
-	const CheckboxesFilter = ({ data }) => (
+	const CheckboxesFilter = ({ data, filterType }) => (
 		<Form className="mt-4 mt-lg-0">
 			{data.map((item) => (
 				<div key={item._id} className="mb-1">
@@ -25,7 +25,7 @@ const Filters = (props) => {
 						id={item._id}
 						label={<React.Fragment>{item.name}</React.Fragment>}
 						checked={item.isChecked}
-						onChange={(e) => props.onCheckBoxChange(e)}
+						onChange={(e) => props.filterComponentProps.onCheckBoxChange(e, filterType)}
 					/>
 				</div>
 			))}
@@ -37,15 +37,20 @@ const Filters = (props) => {
 	// Filters for sidebar	
 	const sidebarFilters = [
 		{
-			component: <PriceSlider />,
-			title: "Filter by price",
-			subtitle: "Price",
-		},
-		{
-			component: <CheckboxesFilter data={props.brands} />,
+			component: <CheckboxesFilter data={props.filterComponentProps.brands} filterType="brand" />,
 			title: "Filter by brand",
 			subtitle: "Brand",
 		},
+		{
+			component: <CheckboxesFilter data={props.filterComponentProps.categories} filterType="category" />,
+			title: "Filter by categories",
+			subtitle: "Categories",
+		},
+		{
+			component: <PriceSlider />,
+			title: "Filter by price",
+			subtitle: "Price",
+		}
 	]
 
 

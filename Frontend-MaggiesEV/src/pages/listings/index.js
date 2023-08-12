@@ -22,16 +22,31 @@ export async function getServerSideProps() {
 
 
     const response = await fetch('http://localhost:3003/products');
-    const data = await response.json();
+    const products = await response.json();
+
 
     // Fetch brands
     const brandQueryResponse = await fetch('http://localhost:3003/brands');
     const brands = await brandQueryResponse.json();
 
+    const categoryQueryResponse = await fetch('http://localhost:3003/categories');
+    const categories = await categoryQueryResponse.json();
+
+
+    brands.forEach((b) => {
+        b.isChecked = true;
+    });
+
+    categories.forEach((c) => {
+        c.isChecked = true;
+    });
+
+
     return {
         props: {
-            data,
-            brands: brands
+            products: products,
+            brands: brands,
+            categories: categories
         },
     };
 }
@@ -41,14 +56,14 @@ export async function getServerSideProps() {
 const CategorySidebar = (props) => {
 
     const [searchPhrase, setSearchPhrase] = React.useState("");
-    const [products, setProducts] = React.useState(props.data);
+    const [products, setProducts] = React.useState(props.products);
     const [brands, setBrands] = React.useState(props.brands);
-
+    const [categories, setCategories] = React.useState(props.categories);
 
 
     useEffect(() => {
         fetchFilteredProducts();
-    }, [brands]); // Run the effect whenever 'brands' state changes
+    }, [brands, categories]); // Run the effect whenever 'brands' state changes
 
 
 
@@ -62,12 +77,30 @@ const CategorySidebar = (props) => {
             }
         });
 
+
+        // Extract names of selected categories.
+        const selectedCategories = [];
+        categories.forEach(c => {
+            if (c.isChecked) {
+                selectedCategories.push(c.name);
+            }
+        });
+
+
+        console.log("searchPhrase ==> " + searchPhrase);
+
         selectedBrands = selectedBrands.join(",");
         console.log("selected brands ==> " + selectedBrands);
 
+        selectedCategories = selectedCategories.join(",");
+        console.log("selectedCategories ==> " + selectedCategories);
 
+
+        // Set query url.
         var queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
         queryUrl += "&brands=" + selectedBrands;
+        queryUrl += "&categories=" + selectedCategories;
+        
 
         // Fetch JSON data from the API
         fetch(queryUrl)
@@ -96,21 +129,35 @@ const CategorySidebar = (props) => {
 
 
 
-    const onBrandCheckBoxChange = async (e) => {
+    const onCheckBoxChange = async (e, filterType) => {
+
+        const options = (filterType == "brand" ? brands : categories);
 
         const name = e.target.name
 
-        const updatedBrands = brands.map((b) => {
-            if (b.name === name) {
-                // Modify the isChecked property for the triggered brand.
-                return { ...b, isChecked: !b.isChecked };
+        const updatedOptions = options.map((o) => {
+            if (o.name === name) {
+                // Modify the isChecked property for the triggered checkbox.
+                return { ...o, isChecked: !o.isChecked };
             }
-            return b;
+            return o;
         });
 
 
-        setBrands(updatedBrands);
+        if (filterType == "brand") {
+            setBrands(updatedOptions);
+        } else {
+            setCategories(updatedOptions);
+        }
 
+    };
+
+
+
+    const filterComponentProps = {
+        brands: brands,
+        categories: categories,
+        onCheckBoxChange: onCheckBoxChange
     };
 
 
@@ -147,7 +194,7 @@ const CategorySidebar = (props) => {
                 {/* Filters                             */}
                 <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">
                     <CategoriesMenu />
-                    <Filters brands={brands} onCheckBoxChange={onBrandCheckBoxChange} />
+                    <Filters filterComponentProps={filterComponentProps} />
                 </Col>
 
             </Row>
