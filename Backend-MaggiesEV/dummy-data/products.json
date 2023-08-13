@@ -34,5 +34,114 @@
             "shimano-evo-side.jpg",
             "shimano-evo-top.jpg"
         ]
+    },
+	{
+        "name": "Nissan ARIYA",
+        "brand": "Nissan",
+        "model": "ARIYA",
+        "price": 55843.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "ariya01.jpg",
+            "ariya02.jpg",
+            "ariya03.jpg"
+        ]
+    },
+	{
+        "name": "Nissan LEAF",
+        "brand": "Nissan",
+        "model": "LEAF",
+        "price": 44093.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "leaf01.jpg",
+            "leaf02.jpg",
+            "leaf03.jpg"
+        ]
+    },
+	{
+        "name": "TOYOTA Prius",
+        "brand": "TOYOTA",
+        "model": "Prius",
+        "price": 32924.00,
+        "categories": ["E-car", "Hybrid"],        
+        "imageLinks": [
+            "prius2022_01.jpg",
+            "prius2022_02.jpg",
+            "prius2022_03.jpg"
+        ]
+    },
+	{
+        "name": "Tesla Model S",
+        "brand": "Tesla",
+        "model": "Model S",
+        "price": 122990.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "model_s_01.jpg",
+            "model_s_02.jpg",
+            "model_s_03.jpg"
+        ]
+    },
+	{
+        "name": "BMW i5",
+        "brand": "BMW",
+        "model": "i5",
+        "price": 66800.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "bmw_i5_01.jpg",
+            "bmw_i5_02.jpg",
+            "bmw_i5_03.jpg"
+        ]
+    },
+	{
+        "name": "BMW iX",
+        "brand": "BMW",
+        "model": "iX",
+        "price": 87100.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "bmw_ix_01.jpg",
+            "bmw_ix_02.jpg",
+            "bmw_ix_03.jpg"
+        ]
+    },
+	{
+        "name": "SUBARU SOLTERRA",
+        "brand": "SUBARU",
+        "model": "SOLTERRA",
+        "price": 61467.00,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "solterra_01.jpg",
+            "solterra_02.jpg",
+            "solterra_03.jpg"
+        ]
+    },
+	{
+        "name": "Co-op Cycles Generation e1.1",
+        "brand": "Co-op Cycles",
+        "model": "Generation e1.1",
+        "price": 798.99,
+        "categories": ["E-bike"],        
+        "imageLinks": [
+            "generatioin1_1_01.jpg",
+            "generatioin1_1_02.jpg",
+            "generatioin1_1_03.jpg"
+        ]
+    },
+	{
+        "name": "2022 GMC Hummer EV",
+        "brand": "GMC",
+        "model": "Hummer EV",
+        "price": 108700.99,
+        "categories": ["E-car"],        
+        "imageLinks": [
+            "gmc_hummerEv_01.jpg",
+            "gmc_hummerEv_02.jpg",
+            "gmc_hummerEv_03.jpg"
+        ]
     }
+
 ]
