@@ -4,7 +4,6 @@ import fetch from 'isomorphic-fetch'; // Import the fetch function
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import Link from "next/link"
 
-import products from "../../data/products-clothes.json"
 import CardProduct from "../../components/CardProduct"
 
 import Pagination from "../../components/Pagination"
@@ -21,6 +20,7 @@ export async function getServerSideProps() {
     console.log("executing METHOD: getServerSideProps()..");
 
 
+    // TODO: Make these as one request.
     const response = await fetch('http://localhost:3003/products');
     const products = await response.json();
 
@@ -31,6 +31,10 @@ export async function getServerSideProps() {
 
     const categoryQueryResponse = await fetch('http://localhost:3003/categories');
     const categories = await categoryQueryResponse.json();
+
+    const priceRangeQueryResponse = await fetch('http://localhost:3003/productsPriceRange');
+    const priceRange = await priceRangeQueryResponse.json();
+
 
 
     brands.forEach((b) => {
@@ -46,7 +50,8 @@ export async function getServerSideProps() {
         props: {
             products: products,
             brands: brands,
-            categories: categories
+            categories: categories,
+            priceRange: priceRange
         },
     };
 }
@@ -59,11 +64,12 @@ const CategorySidebar = (props) => {
     const [products, setProducts] = React.useState(props.products);
     const [brands, setBrands] = React.useState(props.brands);
     const [categories, setCategories] = React.useState(props.categories);
+    const [priceRange, setPriceRange] = React.useState(props.priceRange);
 
 
     useEffect(() => {
         fetchFilteredProducts();
-    }, [brands, categories]); // Run the effect whenever 'brands' state changes
+    }, [brands, categories]); // Run the effect whenever 'brands' and 'categories' states changes
 
 
 
@@ -100,6 +106,10 @@ const CategorySidebar = (props) => {
         var queryUrl = "http://localhost:3003/searchProducts?name=" + searchPhrase;
         queryUrl += "&brands=" + selectedBrands;
         queryUrl += "&categories=" + selectedCategories;
+        queryUrl += "&minPrice=" + priceRange.minPrice;
+        queryUrl += "&maxPrice=" + priceRange.maxPrice;
+
+        console.log("queryUrl ==> " + queryUrl);
         
 
         // Fetch JSON data from the API
@@ -154,10 +164,25 @@ const CategorySidebar = (props) => {
 
 
 
+    const onPriceFilterChange = (values) => {
+
+        setPriceRange({
+            minPrice: values.min,
+            maxPrice: values.max
+        });
+
+        fetchFilteredProducts();
+
+    }
+
+
+
     const filterComponentProps = {
         brands: brands,
         categories: categories,
-        onCheckBoxChange: onCheckBoxChange
+        priceRange: priceRange,
+        onCheckBoxChange: onCheckBoxChange,
+        onPriceFilterChange: onPriceFilterChange
     };
 
 
@@ -192,8 +217,7 @@ const CategorySidebar = (props) => {
                 </Col>
 
                 {/* Filters                             */}
-                <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">
-                    <CategoriesMenu />
+                <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">                
                     <Filters filterComponentProps={filterComponentProps} />
                 </Col>
 

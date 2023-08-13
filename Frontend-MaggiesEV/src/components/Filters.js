@@ -47,7 +47,7 @@ const Filters = (props) => {
 			subtitle: "Categories",
 		},
 		{
-			component: <PriceSlider />,
+			component: <PriceSlider priceRange={props.filterComponentProps.priceRange} onPriceFilterChange={props.filterComponentProps.onPriceFilterChange} />,
 			title: "Filter by price",
 			subtitle: "Price",
 		}
