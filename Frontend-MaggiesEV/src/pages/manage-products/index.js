@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import fetch from 'isomorphic-fetch';
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 
 import CardProduct from "../../components/CardProduct"
 
@@ -170,10 +170,10 @@ const CategorySidebar = (props) => {
 
             {/* Page Header Title */}
             <div className="hero-content pb-6">
-                <h1>Maggie's EVs Listings</h1>
+                <h1>Manage Products</h1>
                 <Row>
                     <Col xl="8">
-                        <p className="lead text-muted">Find the EV you're looking for.</p>
+                        <Button size="lg">+ Add new Product</Button>
                     </Col>
                 </Row>
             </div>

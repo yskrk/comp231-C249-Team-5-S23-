@@ -38,15 +38,6 @@ const Header = ({ header }) => {
 				dispatch({ type: "add", payload: product })
 			)
 		}
-		// Remove on production START -->
-		else {
-			// // Set first six product items to cart on demo
-			// initialProducts.slice(0, 6).map((product) => {
-			// 	addCartItem(product, 1)
-			// 	dispatch({ type: "add", payload: product, quantity: 1 })
-			// })
-		}
-		// <-- END remove
 
 		if (localStorage.getItem("wishlist")) {
 			// If localStorage exists set wishlist items to wishlist context
@@ -99,6 +90,9 @@ const Header = ({ header }) => {
 					<Nav className="mt-3 mt-lg-0" navbar>
 						<Nav.Item>
 							<Link href={"/listings"}>Listings</Link>
+						</Nav.Item>
+						<Nav.Item style={{ marginLeft: "20px" }}>
+							<Link href={"/manage-products"}>Manage Products</Link>
 						</Nav.Item>
 					</Nav>
 
