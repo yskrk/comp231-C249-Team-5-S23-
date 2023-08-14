@@ -30,9 +30,9 @@ const CartItems = ({ review, className }) => {
 
 	// Remove from cart
 	const removeFromCart = (e, product) => {
-		e.preventDefault()
-		dispatch({ type: "remove", payload: product })
-		removeCartItem(product)
+		e.preventDefault()		
+		removeCartItem(product);
+		dispatch({ type: "remove", payload: product });
 	}
 
 	// Add to cart
@@ -47,22 +47,20 @@ const CartItems = ({ review, className }) => {
 	return (
 		<div className={`cart ${className ? className : ""}`}>
 			<div className={review ? "cart-wrapper" : ""}>
-				{review && (
-					<div className="d-none d-md-block cart-header">
-						<Row>
-							<Col xs="6">Item</Col>
-							<Col xs="2" className="text-center">
-								Price
-							</Col>
-							<Col xs="2" className="text-end">
-								Quantity
-							</Col>
-							<Col xs="2" className="text-end">
-								Total
-							</Col>
-						</Row>
-					</div>
-				)}
+				<div className="d-none d-md-block cart-header">
+					<Row>
+						<Col xs="5">Item</Col>
+						<Col xs="2" className="text-center">
+							Price
+						</Col>
+						<Col xs="2" className="text-center">
+							Quantity
+						</Col>
+						<Col xs="2" className="text-center">
+							Total
+						</Col>
+					</Row>
+				</div>
 				<div className="cart-body">
 					{cartItems.map((item) => (
 						// Cart items
@@ -102,31 +100,16 @@ const CartItems = ({ review, className }) => {
 													<strong>{item.name}</strong>
 												</a>
 											</Link>
-											<br />
-											{/* END PRODUCT TITLE */}
-
-											{/* PRODUCT ATTRIBUTES */}
-											{/* Only demo data. Add real data on production! */}
-											{dummyProduct.attributes.map((attribute, index) => (
-												<React.Fragment key={attribute.name}>
-													<span className="text-muted text-sm">
-														{attribute.name}: {attribute.value}
-													</span>
-													{index < dummyProduct.attributes.length - 1 ? (
-														<br />
-													) : (
-														""
-													)}
-												</React.Fragment>
-											))}
-											{/* END PRODUCT ATTRIBUTES */}
 										</div>
 									</div>
 								</Col>
+
+
 								<Col xs="12" md={review ? 6 : 7} className="mt-4 mt-md-0">
 									<Row className={`align-items-center ${review ? "me-0" : ""}`}>
+
+
 										<Col md={review ? 4 : 3}>
-											{/* PRODUCT PRICE */}
 											<Row>
 												<Col xs="6" className="d-md-none text-muted">
 													Price per item
@@ -135,8 +118,9 @@ const CartItems = ({ review, className }) => {
 													${item.price}
 												</Col>
 											</Row>
-											{/* END PRODUCT PRICE */}
 										</Col>
+
+
 										<Col md="4">
 											<Row className="align-items-center">
 												{/* PRODUCT QUANTITY */}
@@ -160,6 +144,7 @@ const CartItems = ({ review, className }) => {
 																value={item.quantity}
 																onChange={(e) => onQuantityChange(e, item)}
 																type="text"
+																disabled
 															/>
 															<Button
 																variant="items"
@@ -174,6 +159,8 @@ const CartItems = ({ review, className }) => {
 												{/* END PRODUCT QUANTITY */}
 											</Row>
 										</Col>
+
+
 										<Col md={review ? 4 : 3}>
 											<Row>
 												{/* PRICE TOTAL */}
@@ -186,6 +173,8 @@ const CartItems = ({ review, className }) => {
 												{/* END PRICE TOTAL */}
 											</Row>
 										</Col>
+
+
 										{!review && (
 											<Col xs="2" className="d-none d-md-block text-center">
 												{/* REMOVE FROM CART BUTTON */}

@@ -1,6 +1,6 @@
 export const removeCartItem = (product) => {
     const cart = JSON.parse(localStorage.getItem('cart')) // Get cart from local storage
-    const filteredCart = cart.filter(x => product.slug !== x.slug) // Remove item from context
+    const filteredCart = cart.filter(x => product._id !== x._id) // Remove item from context
     localStorage.setItem('cart', JSON.stringify(filteredCart)) // Set updated cart to local storage
 }
 
