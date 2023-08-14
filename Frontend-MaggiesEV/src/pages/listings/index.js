@@ -21,7 +21,7 @@ export async function getServerSideProps() {
 
 
     // TODO: Make these as one request.
-    const response = await fetch('http://localhost:3003/products');
+    const response = await fetch('http://localhost:3003/listings');
     const products = await response.json();
 
 

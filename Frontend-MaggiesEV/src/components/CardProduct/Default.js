@@ -7,6 +7,7 @@ import Stars from "../Stars"
 import Icon from "../Icon"
 
 import Image from "../Image"
+import { getDefaultAltImgSrc } from "../../my-tools/my-helper"
 
 const CardProductDefault = ({
 	product,
@@ -17,7 +18,7 @@ const CardProductDefault = ({
 }) => {
 
 
-	const productHref = `/products/99`;
+	const productHref = `/products/${product._id}`;
 
 
 	return (
@@ -33,7 +34,7 @@ const CardProductDefault = ({
 						<Image
 							className="img-fluid"
 							src={"/img/product/0987188250_1_1_1.jpg"}
-							alt={"product"}
+							alt={getDefaultAltImgSrc()}
 							layout="responsive"
 							width={408}
 							height={523}
@@ -58,20 +59,6 @@ const CardProductDefault = ({
 						<span className="d-none d-sm-inline">Add to cart</span>
 					</a>
 
-					{/* Expand image */}
-					{/* <div>
-						<a
-							className="text-dark text-hover-primary text-decoration-none"
-							href="#"
-							onClick={(e) => {
-								e.preventDefault()
-								setQuickView((prev) => !prev)
-							}}
-							aria-label="open quickview"
-						>
-							<Icon className="svg-icon-heavy" icon="expand-1" />
-						</a>
-					</div> */}
 
 				</div>
 
@@ -86,7 +73,6 @@ const CardProductDefault = ({
 					</Link>
 				</h3>
 				<span className="text-gray-500 text-sm">${product.price}.00</span>
-				{/* <Stars stars={product.stars} className="product-stars text-xs" /> */}
 			</div>
 		</div>
 	)

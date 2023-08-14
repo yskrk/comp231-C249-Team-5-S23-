@@ -18,6 +18,10 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 import { faHeart } from "@fortawesome/free-regular-svg-icons"
 import { useRouter } from "next/router"
 import { displayJsonContents } from "../../my-tools/my-helper";
+import { addCartItem } from "../../hooks/UseCart"
+import { CartContext } from "../../components/CartContext"
+import AddedToCartAlert from "./addedToCartAlert"
+import MaggieAddedToCartAlert from "./MaggieAddedToCartAlert"
 
 
 
@@ -26,8 +30,8 @@ export async function getServerSideProps(context) {
 
 	// Fetch the product data using productId
 	const response = await fetch("http://localhost:3003/products/" + productId)
-    const data = await response.json();
-	
+	const data = await response.json();
+
 	displayJsonContents(data);
 
 	// Modify imageLinks of product.
@@ -49,23 +53,42 @@ export async function getServerSideProps(context) {
 
 const ProductDetails = (props) => {
 
-	const [alert, setAlert] = useState(true)
-	const [activeType, setActiveType] = useState("material_0")
+	const [cartItems, dispatch] = React.useContext(CartContext)
 	const [product, setProduct] = useState(props.product);
+	const [alert, setAlert] = React.useState(false)
 
 	console.log("The product obj...");
 	displayJsonContents(props.product);
+
+
+	const addToCart = (e) => {
+		e.preventDefault()
+		console.log("EVENT: addToCart()");
+		displayJsonContents(product);
+		addCartItem(product, "1")
+		dispatch({ type: "add", payload: product, quantity: "1" })
+
+		setAlert(true);
+	}
+
+	const removeAlert = (val) => {
+		setAlert(false);
+	};
+
 
 	return (
 		<React.Fragment>
 			<section>
 
 				<Container className="pt-5">
+
+					<MaggieAddedToCartAlert visible={alert} setVisible={removeAlert} />
+
 					<Row>
 
 
 						<Col lg="7" className="order-2 order-lg-1">
-							<SwiperGallery data={product.imageLinks} />
+							<SwiperGallery data={product?.imageLinks} />
 						</Col>
 
 
@@ -113,7 +136,7 @@ const ProductDetails = (props) => {
 								<InputGroup className="w-100 mb-4">
 									<div className="flex-grow-1">
 										<div className="d-grid h-100">
-											<Button variant="dark" type="submit">
+											<Button variant="dark" type="submit" size="lg" onClick={(e) => addToCart(e)}>
 												<FontAwesomeIcon
 													icon={faShoppingCart}
 													className="me-2"
