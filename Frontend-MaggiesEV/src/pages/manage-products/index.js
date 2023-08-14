@@ -9,6 +9,7 @@ import Pagination from "../../components/Pagination"
 import CategoryTopBar from "../../components/CategoryTopBar"
 import Filters from "../../components/Filters"
 import { displayJsonContents } from "../../my-tools/my-helper";
+import Link from "next/link";
 
 
 
@@ -173,7 +174,7 @@ const CategorySidebar = (props) => {
                 <h1>Manage Products</h1>
                 <Row>
                     <Col xl="8">
-                        <Button size="lg">+ Add new Product</Button>
+                        <Link href={"manage-products/add-product"}><Button size="lg">+ Add new Product</Button></Link>
                     </Col>
                 </Row>
             </div>
