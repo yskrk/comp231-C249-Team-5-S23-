@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import fetch from 'isomorphic-fetch'; // Import the fetch function
+import fetch from 'isomorphic-fetch';
 
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import Link from "next/link"

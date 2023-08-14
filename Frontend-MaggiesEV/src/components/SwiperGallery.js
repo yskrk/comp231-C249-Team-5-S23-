@@ -12,99 +12,116 @@ import Image from "./Image"
 // swiper core styles
 import "swiper/css"
 
+
+
 const SwiperGallery = (props) => {
-  const [domLoaded, setDomLoaded] = useState(false)
-  useEffect(() => {
-    setDomLoaded(true)
-  }, [])
-  const data = props.data
-  const [lightBoxOpen, setLightBoxOpen] = React.useState(false)
-  const [activeImage, setActiveImage] = React.useState(0)
-  const [activeSlide, setActiveSlide] = React.useState(0)
 
-  const ref = React.useRef(null)
+	const [domLoaded, setDomLoaded] = useState(false)
 
-  const onClick = (index) => {
-    setActiveImage(index)
-    setLightBoxOpen(!lightBoxOpen)
-  }
+	useEffect(() => {
+		setDomLoaded(true)
+	}, [])
 
-  const slideTo = (index) => {
-    setActiveSlide(index)
-    if (ref.current !== null && ref.current.swiper !== null) {
-      ref.current.swiper.slideToLoop(index)
-    }
-  }
 
-  const params = {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    on: {
-      slideChange: () => setActiveSlide(ref.current.swiper.realIndex),
-    },
-  }
-  return (
-    <React.Fragment>
-      <div className="detail-carousel">
-        <Badge bg="primary" className="product-badge">
-          Fresh
-        </Badge>
-        <Badge bg="dark" className="product-badge">
-          Sale
-        </Badge>
-        {domLoaded && (
-          <Swiper {...params} ref={ref}>
-            {data.map((item, index) => (
-              <SwiperSlide key={index}>
-                <InnerImageZoom
-                  hideHint
-                  src={item.img}
-                  zoomSrc={item.img}
-                  alt={item.alt}
-                  zoomType="hover"
-                  className="cursor-pointer"
-                />
+	const data = props.data
+	const [lightBoxOpen, setLightBoxOpen] = React.useState(false)
+	const [activeImage, setActiveImage] = React.useState(0)
+	const [activeSlide, setActiveSlide] = React.useState(0)
 
-                <Button variant="photoswipe" onClick={() => onClick(index)}>
-                  <Icon icon="expand-1" className="svg-icon-heavy" />
-                </Button>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
-      </div>
-      <Lightbox
-        open={lightBoxOpen}
-        close={() => setLightBoxOpen(false)}
-        slides={data?.map((image) => ({
-          alt: image.alt,
-          src: image.img,
-        }))}
-        index={activeImage}
-      />
+	const ref = React.useRef(null)
 
-      <div className="swiper-thumbs">
-        {data.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => slideTo(index)}
-            className={`swiper-thumb-item detail-thumb-item mb-3 ${
-              activeSlide === index ? "active" : ""
-            }`}
-          >
-            <Image
-              className="img-fluid"
-              src={item.img}
-              alt={item.alt}
-              width={98}
-              height={98}
-            />
-          </button>
-        ))}
-      </div>
-    </React.Fragment>
-  )
+
+
+	const onClick = (index) => {
+		setActiveImage(index)
+		setLightBoxOpen(!lightBoxOpen)
+	}
+
+
+	const slideTo = (index) => {
+		setActiveSlide(index)
+		if (ref.current !== null && ref.current.swiper !== null) {
+			ref.current.swiper.slideToLoop(index)
+		}
+	}
+
+
+	const params = {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		on: {
+			slideChange: () => setActiveSlide(ref.current.swiper.realIndex),
+		},
+	}
+
+	const altImg = "/img/model_s_01.jpg";
+
+
+	return (
+		<React.Fragment>
+
+
+			<div className="detail-carousel">
+
+				{domLoaded && (
+					<Swiper {...params} ref={ref}>
+						{data.map((item, index) => (
+							<SwiperSlide key={index}>
+								<InnerImageZoom
+									hideHint
+									src={item}
+									zoomSrc={item}
+									alt={altImg}
+									zoomType="hover"
+									className="cursor-pointer"
+								/>
+
+								<Button variant="photoswipe" onClick={() => onClick(index)}>
+									<Icon icon="expand-1" className="svg-icon-heavy" />
+								</Button>
+
+							</SwiperSlide>
+						))}
+					</Swiper>
+				)}
+			</div>
+
+
+			<Lightbox
+				open={lightBoxOpen}
+				close={() => setLightBoxOpen(false)}
+				slides={data?.map((image) => ({
+					alt: altImg,
+					src: image,
+				}))}
+				index={activeImage}
+			/>
+
+
+
+			<div className="swiper-thumbs">
+				{data.map((item, index) => (
+					<button
+						key={index}
+						onClick={() => slideTo(index)}
+						className={`swiper-thumb-item detail-thumb-item mb-3 ${activeSlide === index ? "active" : ""
+							}`}
+					>
+						<Image
+							className="img-fluid"
+							src={item}
+							alt={altImg}
+							width={98}
+							height={98}
+						/>
+					</button>
+				))}
+			</div>
+
+			
+		</React.Fragment>
+	)
 }
 
 export default SwiperGallery

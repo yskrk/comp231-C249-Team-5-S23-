@@ -35,21 +35,6 @@
         "img": "/img/product/detail-2-gray.jpg",
         "caption": "Push-up Jeans 3 - Caption text",
         "alt": "Push-up Jeans 3"
-      },
-      {
-        "img": "/img/product/detail-4-gray.jpg",
-        "caption": "Push-up Jeans 4 - Caption text",
-        "alt": "Push-up Jeans 4"
-      },
-      {
-        "img": "/img/product/detail-5-gray.jpg",
-        "caption": "Push-up Jeans 5 - Caption text",
-        "alt": "Push-up Jeans 5"
-      },
-      {
-        "img": "/img/product/detail-6.jpg",
-        "caption": "Push-up Jeans 6 - Caption text",
-        "alt": "Push-up Jeans 6"
       }
     ]
   },
