@@ -38,6 +38,7 @@ const EditProduct = (props) => {
 
 	const [product, setProduct] = React.useState(props.product);
 	const [alert, setAlert] = React.useState(false);
+	const [errorAlert, setErrorAlert] = React.useState({ isVisible: false, msg: "Product Name is required." });
 
 
 	const onChange = (e, productAttrib) => {
@@ -73,10 +74,16 @@ const EditProduct = (props) => {
 			console.log("AFTER FETCH...");
 			displayJsonContents(data);
 
-			setAlert(true);
+			// Notify user of the result.
+			if (data.isResultOk) {
+				setAlert(true);
+			} else {
+				setErrorAlert({ isVisible: true, msg: data.error ?? "Error updating data." });
+			}
 
 		} catch (error) {
-			console.error('Error posting data:', error);
+			setErrorAlert({ isVisible: true, msg: error?.message ?? "Error updating data." });
+			console.error('Error updating data:', error?.message);
 		}
 	};
 
@@ -94,6 +101,7 @@ const EditProduct = (props) => {
 				<Col lg="8" xl="9" className="mb-5 mb-lg-0">
 
 					<MaggieAddedToCartAlert visible={alert} setVisible={() => setAlert(false)} msg="Product Saved!" />
+					<MaggieAddedToCartAlert visible={errorAlert.isVisible} setVisible={() => setErrorAlert({ ...errorAlert, isVisible: false })} msg={errorAlert.msg} variant="danger" />
 
 					<Col md={8} className="mb-4">
 						<h3>Product Info</h3>

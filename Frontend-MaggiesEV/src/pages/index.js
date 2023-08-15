@@ -3,16 +3,6 @@ import Link from "next/link"
 
 import { Container, Row, Col, Card } from "react-bootstrap"
 
-import NewArrivals from "../components/NewArrivals"
-import Swiper from "../components/Swiper"
-
-import data from "../data/index.json"
-import products from "../data/products-clothes.json"
-
-import Sale from "../components/Sale"
-import OurHistory from "../components/OurHistory"
-import Brands from "../components/Brands"
-import Image from "../components/Image"
 
 export async function getStaticProps() {
 	return {
@@ -34,11 +24,7 @@ const Index = () => {
 				<Container className="py-6">
 					<Row>
 						<Col sm="6" className="mb-5 mb-sm-0">
-							<Card className="card-scale shadow-0 border-0 text-hover-gray-900 overlay-hover-light text-center">
-								<div>
-									<h1>TODO: Maggie's EVs - Homepage</h1>
-								</div>
-							</Card>
+							<h1>Coming on Iteration 3: Maggie's EVs - Homepage</h1>
 						</Col>
 					</Row>
 				</Container>
