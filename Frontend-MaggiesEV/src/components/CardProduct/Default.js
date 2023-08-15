@@ -6,7 +6,8 @@ import { Badge } from "react-bootstrap"
 import Stars from "../Stars"
 import Icon from "../Icon"
 
-import Image from "../Image"
+// import Image from "../Image"
+import Image from 'react-bootstrap/Image';
 import { getDefaultAltImgSrc } from "../../my-tools/my-helper"
 
 const CardProductDefault = ({
@@ -56,19 +57,26 @@ const CardProductDefault = ({
 			className={`product product-type-0`}
 			data-aos="zoom-in"
 			data-aos-delay="0"
+			style={{
+				
+			}}
 		>
 			<div className="product-image mb-md-3">
 
 				<Link href={productHref}>
 					<a>
-						<Image
-							className="img-fluid"
-							src={"/img/product/0987188250_1_1_1.jpg"}
+						<img
+							style={{
+								width: "100%",
+								height: "523px",
+								objectFit: "contain",
+								backgroundColor: "rgba(0, 0, 0, 0.4)"
+							}}
+							// fluid
+							src={"/img/product/" + product.imageLinks[0]}
 							alt={getDefaultAltImgSrc()}
-							layout="responsive"
-							width={408}
-							height={523}
 						/>
+						
 					</a>
 				</Link>
 
@@ -84,7 +92,7 @@ const CardProductDefault = ({
 						<a className="text-dark">{product.name}</a>
 					</Link>
 				</h3>
-				<span className="text-gray-500 text-sm">${product.price}.00</span>
+				<span className="text-gray-500 text-sm">${product.price}</span>
 			</div>
 		</div>
 	)
