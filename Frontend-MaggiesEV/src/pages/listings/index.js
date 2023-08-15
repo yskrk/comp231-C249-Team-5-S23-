@@ -90,7 +90,7 @@ const CategorySidebar = (props) => {
         queryUrl += "&maxPrice=" + priceRange.maxPrice;
 
         console.log("queryUrl ==> " + queryUrl);
-        
+
 
         // Fetch JSON data from the API
         fetch(queryUrl)
@@ -195,11 +195,11 @@ const CategorySidebar = (props) => {
                             </Col>
                         ))}
                     </Row>
-                    
+
                 </Col>
 
                 {/* Filters                             */}
-                <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">                
+                <Col xl="3" lg="4" className="sidebar pe-xl-5 order-lg-1">
                     <Filters filterComponentProps={filterComponentProps} />
                 </Col>
 
