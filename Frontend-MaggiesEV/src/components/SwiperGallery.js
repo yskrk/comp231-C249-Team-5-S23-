@@ -11,6 +11,7 @@ import { Button, Badge } from "react-bootstrap"
 import Image from "./Image"
 // swiper core styles
 import "swiper/css"
+import { getDefaultAltImgSrc } from "../my-tools/my-helper"
 
 
 
@@ -23,7 +24,13 @@ const SwiperGallery = (props) => {
 	}, [])
 
 
-	const data = props.data
+	// Modify imageLinks of product.
+	const data = [];
+	props.data.forEach(imageLink => {
+		data.push("/img/product/" + imageLink);
+	});
+
+
 	const [lightBoxOpen, setLightBoxOpen] = React.useState(false)
 	const [activeImage, setActiveImage] = React.useState(0)
 	const [activeSlide, setActiveSlide] = React.useState(0)
@@ -108,18 +115,24 @@ const SwiperGallery = (props) => {
 						className={`swiper-thumb-item detail-thumb-item mb-3 ${activeSlide === index ? "active" : ""
 							}`}
 					>
-						<Image
-							className="img-fluid"
+
+						<img
+							style={{
+								width: "98px",
+								height: "98px",
+								objectFit: "contain",
+								backgroundColor: "rgba(0, 0, 0, 0.4)"
+							}}
 							src={item}
-							alt={altImg}
-							width={98}
-							height={98}
+							alt={getDefaultAltImgSrc()}
+
 						/>
+
 					</button>
 				))}
 			</div>
 
-			
+
 		</React.Fragment>
 	)
 }

@@ -192,7 +192,7 @@ const CategorySidebar = (props) => {
                             </Col>
                         ))}
                     </Row>
-                    <Pagination />
+                    
                 </Col>
 
                 {/* Filters                             */}

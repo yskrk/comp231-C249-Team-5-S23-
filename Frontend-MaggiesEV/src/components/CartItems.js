@@ -10,6 +10,7 @@ import dummyProduct from "../data/dummyproduct.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 import Image from "./Image"
+import { getDefaultAltImgSrc } from "../my-tools/my-helper"
 
 const CartItems = ({ review, className }) => {
 	const [cartItems, dispatch] = useContext(CartContext) // Cart context
@@ -30,7 +31,7 @@ const CartItems = ({ review, className }) => {
 
 	// Remove from cart
 	const removeFromCart = (e, product) => {
-		e.preventDefault()		
+		e.preventDefault()
 		removeCartItem(product);
 		dispatch({ type: "remove", payload: product });
 	}
@@ -81,13 +82,15 @@ const CartItems = ({ review, className }) => {
 										{/* PRODUCT IMAGE */}
 										<Link href={`/products/${item._id}`}>
 											<a>
-												{/* TODO */}
-												<Image
-													className="cart-item-img"
-													src={"/img/product/detail-3-gray.jpg"}
-													alt={null}
-													width={80}
-													height={103}
+												<img
+													style={{
+														width: "80px",
+														height: "103px",
+														objectFit: "contain",
+														backgroundColor: "rgba(0, 0, 0, 0.4)"
+													}}
+													src={"/img/product/" +  item.imageLinks[0]}
+													alt={getDefaultAltImgSrc()}
 												/>
 											</a>
 										</Link>

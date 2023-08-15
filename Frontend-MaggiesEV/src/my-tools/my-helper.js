@@ -6,7 +6,7 @@ export function displayJsonContents(jsonObj) {
 
 
 export function getDefaultAltImgSrc() {
-    return "/img/product/model_s_01.jpg";
+    return "/img/product/beetle-1.jpg";
 }
 
 

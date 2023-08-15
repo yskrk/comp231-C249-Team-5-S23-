@@ -34,14 +34,6 @@ export async function getServerSideProps(context) {
 
 	displayJsonContents(data);
 
-	// Modify imageLinks of product.
-	const updatedImageLinks = [];
-	data.product.imageLinks.forEach(imageLink => {
-		updatedImageLinks.push("/img/product/" + imageLink);
-	});
-
-	data.product.imageLinks = updatedImageLinks;
-
 	return {
 		props: {
 			product: data.product

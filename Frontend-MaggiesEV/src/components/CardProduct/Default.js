@@ -72,7 +72,6 @@ const CardProductDefault = ({
 								objectFit: "contain",
 								backgroundColor: "rgba(0, 0, 0, 0.4)"
 							}}
-							// fluid
 							src={"/img/product/" + product.imageLinks[0]}
 							alt={getDefaultAltImgSrc()}
 						/>
