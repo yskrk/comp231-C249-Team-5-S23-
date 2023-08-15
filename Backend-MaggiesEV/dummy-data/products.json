@@ -5,6 +5,7 @@
         "model": "Model 3",
         "price": 38549.59,
         "categories": ["E-car"],        
+        "quantity": 7,
         "imageLinks": [
             "my-googled-tesla-model-3.jpg",
             "my-googled-tesla-model-3-white.jpg",

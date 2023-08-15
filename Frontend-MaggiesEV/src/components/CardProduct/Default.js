@@ -15,10 +15,40 @@ const CardProductDefault = ({
 	addToCart,
 	addToWishlist,
 	setQuickView,
+	isForManagment
 }) => {
 
 
 	const productHref = `/products/${product._id}`;
+
+
+	const productHoverOverlay = (
+		<div className="product-hover-overlay">
+			<a
+				className="text-dark text-sm"
+				aria-label="add to cart"
+				href="#"
+				onClick={(e) => addToCart(e, product)}
+			>
+				<span className="d-none d-sm-inline">Add to cart</span>
+			</a>
+
+
+		</div>
+	);
+
+
+	if (isForManagment) {
+
+		const editProductHref = `/manage-products/edit-product/${product._id}`;
+
+		productHoverOverlay = (
+			<div className="product-hover-overlay">
+				<Link className="text-dark text-sm" href={editProductHref}>Edit Product</Link>
+			</div>
+		);
+	}
+
 
 
 	return (
@@ -40,27 +70,9 @@ const CardProductDefault = ({
 							height={523}
 						/>
 					</a>
-
 				</Link>
 
-
-
-				<div className="product-hover-overlay">
-					<a
-						className="text-dark text-sm"
-						aria-label="add to cart"
-						href="#"
-						onClick={(e) => addToCart(e, product)}
-					>
-						<Icon
-							className="text-hover-primary svg-icon-heavy d-sm-none"
-							icon="retail-bag-1"
-						/>
-						<span className="d-none d-sm-inline">Add to cart</span>
-					</a>
-
-
-				</div>
+				{productHoverOverlay}
 
 			</div>
 

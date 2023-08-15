@@ -5,7 +5,7 @@ import { addCartItem } from "../../hooks/UseCart"
 import { addWishlistItem } from "../../hooks/UseWishlist"
 import { WishlistContext } from "../WishlistContext"
 import CardProductDefault from "./Default"
-const CardProduct = ({ product, masonry, cardType }) => {
+const CardProduct = ({ product, masonry, cardType, isForManagment }) => {
 
 	const [cartItems, dispatch] = React.useContext(CartContext)
 	const [wishlistItems, wishlistDispatch] = React.useContext(WishlistContext)
@@ -34,6 +34,7 @@ const CardProduct = ({ product, masonry, cardType }) => {
 		addToWishlist: addToWishlist,
 		quickView: quickView,
 		masonry: masonry,
+		isForManagment: isForManagment
 	}
 
 

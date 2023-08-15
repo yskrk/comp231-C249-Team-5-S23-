@@ -9,6 +9,7 @@ import Pagination from "../../components/Pagination"
 import CategoryTopBar from "../../components/CategoryTopBar"
 import Filters from "../../components/Filters"
 import { displayJsonContents } from "../../my-tools/my-helper";
+import MaggieAddedToCartAlert from "../products/MaggieAddedToCartAlert";
 
 
 
@@ -43,6 +44,7 @@ const CategorySidebar = (props) => {
     const [brands, setBrands] = React.useState(props.brands);
     const [categories, setCategories] = React.useState(props.categories);
     const [priceRange, setPriceRange] = React.useState(props.priceRange);
+    const [alert, setAlert] = React.useState(false);
 
 
     useEffect(() => {
@@ -176,6 +178,8 @@ const CategorySidebar = (props) => {
                         <p className="lead text-muted">Find the EV you're looking for.</p>
                     </Col>
                 </Row>
+
+                <MaggieAddedToCartAlert visible={alert} setVisible={() => setAlert(false)} />
             </div>
 
 

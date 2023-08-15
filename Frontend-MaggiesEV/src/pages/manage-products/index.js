@@ -188,7 +188,7 @@ const CategorySidebar = (props) => {
                     <Row>
                         {products.map((product, index) => (
                             <Col key={index} xl="4" xs="6">
-                                <CardProduct product={product} />
+                                <CardProduct product={product} isForManagment={true} />
                             </Col>
                         ))}
                     </Row>

@@ -5,33 +5,38 @@ import {
 	Col,
 	Form,
 	Button,
-	Dropdown,
 } from "react-bootstrap"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSave } from "@fortawesome/free-regular-svg-icons"
-import { displayJsonContents } from "../../my-tools/my-helper";
-import MaggieAddedToCartAlert from "../products/MaggieAddedToCartAlert";
+import { displayJsonContents } from "../../../my-tools/my-helper";
+import MaggieAddedToCartAlert from "../../products/MaggieAddedToCartAlert";
 
 
-export async function getServerSideProps() {
 
-	const response = await fetch('http://localhost:3003/listings');
+export async function getServerSideProps(context) {
+
+	const { editProductId } = context.params;
+
+	// Fetch the product data using productId
+	var response = await fetch("http://localhost:3003/products/" + editProductId);
 	const data = await response.json();
 
+	response = await fetch('http://localhost:3003/listings');
+	const extraData = await response.json();
+
+
 	return {
-		props: data
+		props: {
+			brands: extraData.brands,
+			categories: extraData.categories,
+			product: data.product
+		}
 	};
 }
 
 
-const AddProduct = (props) => {
 
-	const [product, setProduct] = React.useState({
-		name: "", brand: "Tesla", category: "E-vehicle", price: 499.99, quantity: 0,
-		imageLinks: ["beetle-1.jpg", "beetle-2.jpg", "beetle-3.jpg"]
-	});
+const EditProduct = (props) => {
 
+	const [product, setProduct] = React.useState(props.product);
 	const [alert, setAlert] = React.useState(false);
 
 
@@ -54,8 +59,9 @@ const AddProduct = (props) => {
 
 		try {
 
-			const response = await fetch('http://localhost:3003/add-product', {
-				method: 'POST',
+			const reqUrl = 'http://localhost:3003/products/' + product._id;
+			const response = await fetch(reqUrl, {
+				method: 'PUT',
 				headers: {
 					'Content-Type': 'application/json',
 				},
@@ -80,7 +86,7 @@ const AddProduct = (props) => {
 		<Container className="py-6">
 
 			<div className="hero-content pb-6">
-				<h1>Add a New Product</h1>
+				<h1>Edit Product</h1>
 			</div>
 
 			<Row>
@@ -141,7 +147,7 @@ const AddProduct = (props) => {
 						<Form.Label>Quantity</Form.Label>
 						<Form.Control
 							type="number"
-							value={product.quantity}
+							value={product?.quantity}
 							onChange={(e) => onChange(e, "quantity")}
 						/>
 					</Col>
@@ -160,4 +166,4 @@ const AddProduct = (props) => {
 	)
 }
 
-export default AddProduct;
+export default EditProduct;
