@@ -39,7 +39,7 @@ const Filters = (props) => {
 		{
 			component: <CheckboxesFilter data={props.filterComponentProps.brands} filterType="brand" />,
 			title: "Filter by brand",
-			subtitle: "Brand",
+			subtitle: "Brands",
 		},
 		{
 			component: <CheckboxesFilter data={props.filterComponentProps.categories} filterType="category" />,
